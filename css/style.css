@@ -183,11 +183,12 @@
   padding: 5px;
   text-transform: uppercase;
   margin: 5px;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
 
 .breadcrumb li a {
   font-weight: 100;
-  letter-spacing: 2px;
 }
 
 .breadcrumb li ion-icon {
@@ -1036,7 +1037,8 @@ footer .bottom .nav li:last-child {
   text-transform: uppercase;
   font-weight: 200;
   font-size: 75px;
-  color: #0e231a;
+  color: #007a3e;
+  margin-bottom: 20px;
 }
 
 .intro .container p {
@@ -1160,6 +1162,17 @@ footer .bottom .nav li:last-child {
   width: 100%;
 }
 
+.members .column .card-overlay .text-overlay h3 {
+  font-weight: 300;
+}
+
+.members .column .card-overlay .text-overlay p {
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
 .members .column .card-overlay .text-overlay h4 {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1193,16 +1206,16 @@ footer .bottom .nav li:last-child {
 }
 
 .report .report-card {
-  margin: 30px 15px;
+  margin: 15px 0;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .report .report-card:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 1.875rem rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .report .report-card .report-img {
@@ -1225,10 +1238,6 @@ footer .bottom .nav li:last-child {
   z-index: 1;
 }
 
-.report .report-card .report-img:hover::before {
-  background: rgba(14, 35, 26, 0.8);
-}
-
 .report .report-card .report-img img {
   width: 100%;
   position: relative;
@@ -1236,37 +1245,38 @@ footer .bottom .nav li:last-child {
 
 .report .report-card .report-img a {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #ffffff;
   z-index: 2;
   opacity: 0;
-  -webkit-transform: translate(20px);
-          transform: translate(20px);
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.6px;
 }
 
-.report .report-card .report-img a i {
-  background: #0e231a;
-  color: #FFFFFF;
-  width: 30px;
-  height: 30px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: 5px;
+.report .report-card .report-img a ion-icon {
+  display: block;
+  font-size: 42px;
+  margin: auto;
+  margin-bottom: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.report .report-card .report-img a:hover ion-icon {
+  margin-bottom: 15px;
 }
 
 .report .report-card .publish {
-  padding: 30px;
+  padding: 20px;
   text-align: center;
+  min-height: 96px;
 }
 
 .report .report-card .publish h6 {
@@ -1278,14 +1288,20 @@ footer .bottom .nav li:last-child {
 }
 
 .report .report-card .publish h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 100;
+  font-family: 'Neufile Grotesk';
+}
+
+.report .report-card:hover .report-img::before {
+  background: rgba(14, 35, 26, 0.8);
 }
 
 .report .report-card:hover .report-img a {
   opacity: 1;
-  -webkit-transform: translate(-10px);
-          transform: translate(-10px);
 }
 
 .contact .sec-head {
