@@ -36,26 +36,58 @@
     font-size: 13px;
     line-height: 16px;
     letter-spacing: 5px;
+    position: relative;
+
+    &:hover {
+        &::before {
+            width: 0;
+        }
+
+        &::after {
+            width: 145px;
+            transition-delay: 0.3s;
+        }
+    }
+
+    
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 5%;
+        left: 0%;
+        width: 145px;
+        height: 1px;
+        background-color:#007a3e;
+        transition: 0.5s;
+    }
+
     &::after {
         content: '';
         position: absolute;
         bottom: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 145px;
+        left: 0%;
+        width: 0px;
         height: 1px;
         background-color:#007a3e;
+        transition: 0.5s;
     }
 
     &.white {
         color : #fff;
         font-weight: 600;
         background-color: transparent!important;
+        &:before {
+            background-color: #fff;
+            bottom: -15px;
+            left: 0;
+            height: 1px;
+        }
+
         &:after {
             background-color: #fff;
-            top: 102%;
-            left: 9.5%;
-            height: 2px;
+            bottom: -15px;
+            left: 0;
+            height: 1px;
         }
     }
 }
@@ -69,6 +101,7 @@
     color: #FFFFFF;
     background-color: #007a3e;
     align-items: center;
+    transition: 0.8s;
 
     &:hover{
         background: transparent;
@@ -184,6 +217,7 @@ header {
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
         transition: 0.5s;
         transform: translateY(-10px);
+        padding-top: 10px;
 
         .solid {
             display: block !important;
@@ -206,6 +240,14 @@ header {
 
                     i {
                         font-size: 10px;
+                    }
+                }
+
+                .dropdown-menu {
+                    li {
+                        a {
+                            font-weight: 400;
+                        }
                     }
                 }
             }
@@ -352,7 +394,7 @@ header {
                     // margin: 24px auto;
 
                     li {
-                        display: inline-block;
+                        display: block;
                         margin-top: 20px;
                         &:nth-last-child(1){
                             margin-bottom: 20px;
@@ -452,17 +494,21 @@ header {
 
     .banner-text {
         position: relative;
+        display: flex;
+        justify-content: end;
 
         .text {
             z-index: 5;
-            position: absolute;
-            margin-top: 145px;
             color: #FFFFFF;
-            text-shadow: #000000;
-            width: 60%;
+            position: absolute;
+            width: 550px;
+            max-width: 100%;
+            left: 0;
+            top: 20%;
 
             h1 {
                 margin-bottom: 28px;
+                text-shadow: 1px 1px 1px rgba(53, 52, 52, 0.6);
             }
 
             h3 {
@@ -480,16 +526,14 @@ header {
         }
 
         .video {
-            position: absolute;
             display: flex;
-            justify-content: flex-end;
-
+            
             video{
-                width: 76%;
+                width: 80%;
                 height: 70vh;
                 object-fit: cover;
-                margin-left: 320px;
                 margin-top: 70px;
+                margin-left: auto;
             }
         }
     }
@@ -851,6 +895,7 @@ footer{
         bottom: 0;
         right: 0;
         max-width: 100%;
+        z-index: z;
 
         &::before{
             width: 100%;
@@ -860,7 +905,9 @@ footer{
     }
 
     a{
-         color: #FFFFFF;
+        color: #FFFFFF;
+        font-weight: 300;
+
          &:hover{
              color: #FFFFFF;
             text-decoration: underline;
@@ -874,9 +921,9 @@ footer{
         grid-template-columns: repeat(4,auto);
         justify-content: space-between;
         grid-gap: 70px 20px;
-        // display: flex;
-        // justify-content: center;
+        font-weight: 300;
         position: relative;
+        z-index: 2;
 
         .left {
             .logo{
@@ -896,9 +943,9 @@ footer{
    
         h6{
             margin-bottom: 20px;
-            font-weight: 800;
-            letter-spacing: 3px;
-            font-size: 15px;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: 'Neufile Grotesk';
             
         }
         .footer-nav{
@@ -923,15 +970,21 @@ footer{
         flex-wrap: wrap;
         justify-content: space-between;
         border-top: 1px solid #fff;
-        padding: 30px 0;
+        padding: 20px 0;
         margin-top: 90px;
+        position: relative;
+        z-index: 2;
+
         ul{
             display: flex;
         }
         .social{
             ul{
-                font-size: 20px;
                 li{
+                    a {
+                        font-size: 14px;
+                    }
+
                     &:nth-child(2){
                         margin-left: 30px;
                     }
