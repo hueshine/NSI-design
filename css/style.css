@@ -1098,15 +1098,9 @@ footer .bottom .nav li:last-child {
   width: auto;
 }
 
-.profile .col-img {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 630px;
-}
-
-.profile .lower {
-  margin-top: 10px;
+.profile .left-margin {
+  margin-left: calc(100% * 1/12);
+  padding: 0 20px;
 }
 
 .report .text {

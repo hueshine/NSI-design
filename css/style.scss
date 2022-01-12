@@ -1100,19 +1100,11 @@ footer{
 }
 
 .profile{
-    
-    .col-img {
-        background-size: cover;
-        background-position:center center;
-        background-repeat: no-repeat;
-        height: 630px;
-    }
-    
-    .lower{
-        margin-top: 10px;
-        
-    }
 
+    .left-margin{
+        margin-left: calc(100% * 1/12);
+        padding: 0 20px;
+    }
 }
 
 .report{
