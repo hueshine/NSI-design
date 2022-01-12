@@ -1,0 +1,481 @@
+@media screen and (min-width: 1900px) {
+
+	.container, .container-small {
+		max-width: 1650px;
+    }
+
+    .bg .left-right-img .right-img, .picture img {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .part{
+        margin: 180px auto;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+     
+    .container, .container-small {
+        max-width: 1300px;
+    }
+
+    .bg .left-right-img .right-img {
+        margin-right: 0;
+    }
+
+    .bg .left-right-img-text .left-img {
+        transform: translate(0);
+    }
+
+    .foundation {
+        height: 880px;
+    }
+
+    .gallery .top, .gallery .bottom {
+        margin-bottom: 10px;
+    }
+
+    .gallery .top .col-md-6:last-child {
+        margin-left: 9.3px;
+    }
+
+    .gallery .bottom .col-md-4:nth-last-child(even) {
+        margin: 0 9.3px;  
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .container {
+        max-width: 990px; 
+    }
+
+    .container-small{
+        max-width: 990px;
+    }    
+    
+    .part{
+        margin: 100px auto;
+    }
+
+    .menu-btn {
+        display: block !important;
+        
+    } 
+
+    header .navs, .solid-header .navs {
+        
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0%;
+        padding-top: 10px;
+        overflow: scroll;
+        padding: 20px;
+        transform:translateX(100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        background-color: #0e231a;
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+    header .navs ul, header.solid-header .navs ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    header .navs ul li, header.solid-header .navs ul li{
+        display: block;
+        padding: 0;
+        margin: 30px;
+    }
+
+    
+    header .navs ul li a, header.solid-header .navs ul li a {
+    
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff !important;
+        padding: 0px ;       
+    }
+    
+    header .navs .nav-top ul li a, header.solid-header .navs .nav-top ul li a {
+        
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff !important;
+        padding: 0px ;       
+    }
+
+    header .nav-top, header.solid-header .nav-top{
+        border-top: 1px solid #ffffff;
+    }
+
+    header .nav-bottom .right{
+        display: inline;
+    }
+    
+    header .nav-bottom .down{
+        display: none;
+    }
+    
+    header .navs ul li .dropdown-menu {
+        display: none;
+        background: transparent;
+        transition: 0.8s;
+        position: relative;
+        width: 100%;
+        height: auto;
+        transform: translateY(0);
+   
+    }
+
+    header .navs ul li:hover .dropdown-menu {
+
+        transform: translateY(0px);
+        position: relative;
+        display: block;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        top: 0;
+    }
+
+    header .navs ul li .dropdown-menu li {
+        display: block;
+        
+    }
+
+    .banner .banner-text .text h1{
+        font-size: 50px;
+    }
+    
+    .banner .banner-text .text {
+        margin-top: 100px;
+    }
+
+    .non .banner-text .text{
+        margin-top: 280px;
+    }
+    
+    .banner .banner-text .text h3{
+        margin-bottom: 40px;
+    }
+    
+    .banner .banner-text .video video {
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    
+    .banner .banner-text .video {
+        position: relative;
+        width: 100%;
+        display: flex;
+    }
+
+    .bg .left-right-img, .bg .left-right-img-text {
+        grid-template-columns: 400px 1fr;
+    }
+
+    .bg .left-right-img-text .right-txt {
+        max-width: 70%;
+        margin-left: 110px;
+    }
+
+    .foundation {
+        height: auto;
+    }
+
+    .foundation .inner {
+        display: block;
+        padding: 70px 0;
+    }
+    
+    .foundation .inner .picture {
+        width: 100%;
+    }
+
+    .foundation .inner .generalHead {
+        width: 90%;
+        padding: 50px;
+        margin: 10px auto;
+        margin-top: -70px ;
+    }
+
+    .learn .col-md-4 {
+        width: 33.33%;
+    }
+
+    .learn .col-md-4:nth-child(even) {
+        margin: inherit;
+    }
+
+    .intro h1{
+        font-size: 60px !important;
+    }
+
+    .report .report-card .publish h4{
+        font-size: 14px;
+    }
+
+    .intro p, .award p, .profile p{
+        font-size: 16px;
+    } 
+
+    .award .text {
+        margin: 0;
+    }
+
+    .award .picture{
+        margin-top: 30px;
+    }
+
+    .profile .col-img{
+        margin-top: 100px;
+    }
+
+    .form-group .mid{
+        flex-direction: column;
+    }
+
+    .form-group .mid .col-md-6{
+        width: 100%;
+    }
+
+    .gallery .top .col-md-6:last-child {
+        margin-left: 7px;
+    }
+
+    .gallery .bottom .col-md-4:nth-last-child(even) {
+        margin: 0 7px;
+    }   
+}
+
+@media screen and (max-width: 768px) { 
+
+    .container, .container-small {
+        max-width: 740px; 
+    }
+
+    .part{
+        margin: 50px auto;
+    }
+
+    .italic-cor{
+        font-size: 28px;
+    }
+
+    .generalHead h2{
+        font-size: 38px;
+    }
+    
+    .generalHead p{
+        font-size: 15px;
+    }
+
+    .banner .banner-text .video video {
+        margin-top: 30px;
+    }
+
+    .banner .banner-text .text {
+        margin-top: 70px;
+    }
+
+    .general-btm.white:after{
+        left: 17%;
+    }
+
+    .mission p{
+        width: 100%;
+    }
+
+    .para{
+        padding: 60px 0;
+    }
+
+    .bg .left-right-img {
+        display: block;
+        width: 100%;
+    }
+
+    .bg .left-right-img .right-img{
+        align-items: right;
+    }
+
+    .bg .left-right-img .right-img {
+        padding-top: 90px;
+    }
+
+    .bg .left-right-img-text img{
+        display: none;
+    }
+
+    .bg .left-right-img, .bg .left-right-img-text {
+        display: block;
+    }
+
+    .bg .left-right-img-text .right-txt {
+        margin-top:150px;
+    }
+
+    .bg .left-right-img-text .left-img .pattern{
+        display: none;
+    }
+
+    .at_glance .glance p{
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+
+    .learn .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+ 
+    .learn .col-md-4 img{
+        height: 100%;
+    }
+
+    .small{
+        margin: 0;
+    }
+    
+    .footer .bottom .social .ul{
+        font-size: 11px;
+    }
+
+    .at_glance .glance p {
+        width: 100%;
+    }
+
+    .gallery .top .col-md-6:last-child {
+        margin-left: 5.3px;
+    }
+
+    .gallery .bottom .col-md-4:nth-last-child(even) {
+        margin: 0 5.3px;
+    }
+
+    .gallery .top, .gallery .bottom{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    
+    .general-btm.white:after{
+        left: 50%;
+    }
+
+    .wrap.generalHead {
+        padding: 0 15px;
+        margin-bottom: 25px;
+    }
+
+    .banner{
+        height: 900px;
+    }
+
+    .banner .banner-text .video video, .text{
+        display: block;
+        width: 100% !important;
+    }
+
+    .banner .banner-text .video video{
+        height: 300px;
+    }
+
+    .banner .banner-text .text{
+        text-align: center;
+        margin-top: 390px;
+    }
+
+    .para{
+        width: 100%;
+    }
+
+    .para .row .col-md-6{
+        padding-right: 0;
+    }
+
+    .bg .left-right-img-text .right-txt {
+        margin-left: 15%;
+    }
+
+
+    .foundation .inner .generalHead {
+        padding: 50px 20px;
+    }
+
+    .learn-card {
+        padding: 0 15px;
+        margin: 20px 0;
+    }
+
+    .small .start a{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .mission p {
+        margin: 0;
+    }
+
+    .gallery .row{
+        display: block;
+    }
+
+    .gallery .top .col-md-6{
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    .gallery .top .col-md-6:last-child {
+        margin-left: 0px;
+    }
+
+    .gallery .bottom .col-md-4:nth-last-child(even) {
+        margin: 0px;  
+    }
+
+    .gallery .bottom .col-md-4{
+        width: 100%;
+        margin-bottom: 7px !important;
+    }
+
+    footer .top{
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 65px 20px;
+        padding-top: 80px;
+    }
+
+    footer .bottom{
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .bottom .social{
+        margin-bottom: 20px;
+    }
+
+    footer .bottom .nav ul{
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+ 
+    footer li{
+        text-align: center;
+        padding-bottom: 10px;
+    }  
+
+}
