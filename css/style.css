@@ -31,18 +31,41 @@
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 5px;
+  position: relative;
+}
+
+.general-btm:hover::before {
+  width: 0;
+}
+
+.general-btm:hover::after {
+  width: 145px;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.general-btm::before {
+  content: '';
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  width: 145px;
+  height: 1px;
+  background-color: #007a3e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .general-btm::after {
   content: '';
   position: absolute;
   bottom: 5%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 145px;
+  left: 0%;
+  width: 0px;
   height: 1px;
   background-color: #007a3e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .general-btm.white {
@@ -51,11 +74,18 @@
   background-color: transparent !important;
 }
 
+.general-btm.white:before {
+  background-color: #fff;
+  bottom: -15px;
+  left: 0;
+  height: 1px;
+}
+
 .general-btm.white:after {
   background-color: #fff;
-  top: 102%;
-  left: 9.5%;
-  height: 2px;
+  bottom: -15px;
+  left: 0;
+  height: 1px;
 }
 
 .general-button a {
@@ -68,6 +98,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .general-button a:hover {
@@ -177,6 +209,7 @@ header.solid-header {
   transition: 0.5s;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
+  padding-top: 10px;
 }
 
 header.solid-header .solid {
@@ -201,6 +234,10 @@ header.solid-header .nav-bottom li a {
 
 header.solid-header .nav-bottom li a i {
   font-size: 10px;
+}
+
+header.solid-header .nav-bottom li .dropdown-menu li a {
+  font-weight: 400;
 }
 
 header.solid-header .navs .menu-btn .line {
@@ -337,7 +374,7 @@ header .navs ul li .dropdown-menu {
 }
 
 header .navs ul li .dropdown-menu li {
-  display: inline-block;
+  display: block;
   margin-top: 20px;
 }
 
@@ -420,19 +457,27 @@ header .nav-bottom li a i {
 
 .banner .banner-text {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .banner .banner-text .text {
   z-index: 5;
-  position: absolute;
-  margin-top: 145px;
   color: #FFFFFF;
-  text-shadow: #000000;
-  width: 60%;
+  position: absolute;
+  width: 550px;
+  max-width: 100%;
+  left: 0;
+  top: 20%;
 }
 
 .banner .banner-text .text h1 {
   margin-bottom: 28px;
+  text-shadow: 1px 1px 1px rgba(53, 52, 52, 0.6);
 }
 
 .banner .banner-text .text h3 {
@@ -448,22 +493,18 @@ header .nav-bottom li a i {
 }
 
 .banner .banner-text .video {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .banner .banner-text .video video {
-  width: 76%;
+  width: 80%;
   height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-left: 320px;
   margin-top: 70px;
+  margin-left: auto;
 }
 
 .banner.non {
@@ -829,6 +870,7 @@ footer .pattern {
   bottom: 0;
   right: 0;
   max-width: 100%;
+  z-index: z;
 }
 
 footer .pattern::before {
@@ -839,6 +881,7 @@ footer .pattern::before {
 
 footer a {
   color: #FFFFFF;
+  font-weight: 300;
 }
 
 footer a:hover {
@@ -856,7 +899,9 @@ footer .top {
       -ms-flex-pack: justify;
           justify-content: space-between;
   grid-gap: 70px 20px;
+  font-weight: 300;
   position: relative;
+  z-index: 2;
 }
 
 footer .top .left .logo {
@@ -877,9 +922,9 @@ footer .top .left .location a {
 
 footer .top h6 {
   margin-bottom: 20px;
-  font-weight: 800;
-  letter-spacing: 3px;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Neufile Grotesk';
 }
 
 footer .top .footer-nav {
@@ -908,8 +953,10 @@ footer .bottom {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-top: 1px solid #fff;
-  padding: 30px 0;
+  padding: 20px 0;
   margin-top: 90px;
+  position: relative;
+  z-index: 2;
 }
 
 footer .bottom ul {
@@ -918,8 +965,8 @@ footer .bottom ul {
   display: flex;
 }
 
-footer .bottom .social ul {
-  font-size: 20px;
+footer .bottom .social ul li a {
+  font-size: 14px;
 }
 
 footer .bottom .social ul li:nth-child(2) {
