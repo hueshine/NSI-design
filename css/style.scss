@@ -132,6 +132,10 @@
 
 .part{
     margin: 140px auto;
+
+    &.small {
+        margin: 70px 0;
+    }
 }
 
 .spacing{
@@ -149,10 +153,15 @@
 
     li{
         display: inline;
-        font-size: 15px;
+        font-size: 13px;
         padding: 5px;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        margin: 5px;
+        
+        a {
+            font-weight: 100;
+            letter-spacing: 2px;
+        }
        
 
         ion-icon {
