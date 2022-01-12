@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-BoldItalic.woff2') format('woff2'),
+        url('NeufileGrotesk-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-Bold.woff2') format('woff2'),
+        url('NeufileGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk Bold Extended';
+    src: url('NeufileGrotesk-BoldExtended.woff2') format('woff2'),
+        url('NeufileGrotesk-BoldExtended.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk Light Ext Ita';
+    src: url('NeufileGrotesk-LightExtIta.woff2') format('woff2'),
+        url('NeufileGrotesk-LightExtIta.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-ExtraBold.woff2') format('woff2'),
+        url('NeufileGrotesk-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-LightItalic.woff2') format('woff2'),
+        url('NeufileGrotesk-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk ExtraBold Ext';
+    src: url('NeufileGrotesk-ExtBdExt.woff2') format('woff2'),
+        url('NeufileGrotesk-ExtBdExt.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk Light Extended';
+    src: url('NeufileGrotesk-LightExtended.woff2') format('woff2'),
+        url('NeufileGrotesk-LightExtended.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk ExtraBold ExtIt';
+    src: url('NeufileGrotesk-ExtBdExtIta.woff2') format('woff2'),
+        url('NeufileGrotesk-ExtBdExtIta.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk Medium Ext Ita';
+    src: url('NeufileGrotesk-MedExtIta.woff2') format('woff2'),
+        url('NeufileGrotesk-MedExtIta.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-Light.woff2') format('woff2'),
+        url('NeufileGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk ExtraBold Ita';
+    src: url('NeufileGrotesk-ExtBdIta.woff2') format('woff2'),
+        url('NeufileGrotesk-ExtBdIta.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk Regular Ext Ita';
+    src: url('NeufileGrotesk-RegExtIta.woff2') format('woff2'),
+        url('NeufileGrotesk-RegExtIta.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-Medium.woff2') format('woff2'),
+        url('NeufileGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-MediumItalic.woff2') format('woff2'),
+        url('NeufileGrotesk-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-Regular.woff2') format('woff2'),
+        url('NeufileGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk Medium Extended';
+    src: url('NeufileGrotesk-MediumExtended.woff2') format('woff2'),
+        url('NeufileGrotesk-MediumExtended.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk Regular Ext';
+    src: url('NeufileGrotesk-RegExt.woff2') format('woff2'),
+        url('NeufileGrotesk-RegExt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk Regular';
+    src: url('NeufileGrotesk-RegularItalic.woff2') format('woff2'),
+        url('NeufileGrotesk-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-SemiBold.woff2') format('woff2'),
+        url('NeufileGrotesk-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk SemiBold Ext It';
+    src: url('NeufileGrotesk-SemBdExtIta.woff2') format('woff2'),
+        url('NeufileGrotesk-SemBdExtIta.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk';
+    src: url('NeufileGrotesk-SemiBoldItalic.woff2') format('woff2'),
+        url('NeufileGrotesk-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neufile Grotesk SemiBold Ext';
+    src: url('NeufileGrotesk-SemBdExt.woff2') format('woff2'),
+        url('NeufileGrotesk-SemBdExt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

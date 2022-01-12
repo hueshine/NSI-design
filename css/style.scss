@@ -1,6 +1,8 @@
+@import "./hueshine_a";
+
 .generalHead {
     h6{
-        margin-bottom: 18.2px;
+        margin-bottom: 18px;
         letter-spacing: .25em;
         display: inline-block;
         position: relative;
@@ -9,7 +11,7 @@
         &::after {
             content: '';
             width: 70px;
-            height: 1px;
+            height: 0.5px;
             position: absolute;
             top: 50%;
             left: 130%;   
@@ -19,13 +21,12 @@
 
     h2{
         
-        margin-bottom: 17.6px;
+        margin-bottom: 18px;
     }
     p{
-        font-family: "Work Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+       
         font-size: 18px;
         line-height: 32px;
-        font-weight: 400;
         margin-bottom: 0;        
     }
 }
@@ -119,7 +120,7 @@
         padding: 5px;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-family: "Montserrat", sans-serif;
+       
 
         ion-icon {
             
@@ -168,7 +169,7 @@ header {
     z-index: 9;
 
     img{
-        width: 240px;
+        width: 200px;
     }
 
     .menu-btn{
@@ -181,6 +182,8 @@ header {
         background: #fff;
         padding: 5px 0;
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.5s;
+        transform: translateY(-10px);
 
         .solid {
             display: block !important;
@@ -194,6 +197,18 @@ header {
             width: 192px;
             height: 65px;
             object-fit: contain;
+        }
+        .nav-bottom {
+            li {
+                a {
+                    font-weight: 400;
+                    font-size: 15px;
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
             
         .navs {
@@ -308,8 +323,6 @@ header {
             li {
                 display: inline;
                 padding: 2px;
-                font-family: "Montserrat",sans-serif;    
-                letter-spacing: 2px;
                 position: relative; 
 
                 &:hover {
@@ -376,10 +389,9 @@ header {
                         line-height: 0;
                         color: #fff ;
                         font-size: 13px;
-                        font-weight: 400;
-                        &:hover{
-                            font-weight: 450;
-                        }
+                        font-weight: 300;
+                        letter-spacing: 2px;
+                        
                          
                      }
                 }
@@ -389,8 +401,6 @@ header {
         .nav-bottom{
             
             li{
-                text-align: left !important;
-                justify-content: left !important;
                 position: relative;
 
                 &:last-child {
@@ -411,6 +421,11 @@ header {
                     font-size: 15px;
                     padding: 0 20px;
                     font-weight: 600;
+
+                    i {
+                        font-size: 12px;
+                        margin-left: 5px;
+                    }
                     
                 }
         
@@ -447,14 +462,14 @@ header {
             width: 60%;
 
             h1 {
-                margin-bottom: 28.8px;
+                margin-bottom: 28px;
             }
 
             h3 {
-                font-size: 36px;
-                font-style: italic;
-                line-height: 49px;
+                font-size: 24px;
+                line-height: 38px;
                 margin-bottom: 60px;
+                font-weight: 100;
             }
             &.about{
                 width: 100%;
@@ -686,9 +701,9 @@ header {
     .learn-card {
         img{
             width: 100%;
-            margin-bottom: 40px;
-            height: 246px;
+            height: 285px;
             object-fit: cover;
+            margin-bottom: 20px;
 
             &:last-child()
             {
@@ -697,10 +712,9 @@ header {
         }
 
         h3{
-            font-family: "Cormorant",sans-serif;
-            font-size: 27px;
+            font-size: 24px;
             line-height: 31px;
-            font-weight: 800;
+            font-weight: 400;
             margin-bottom: 14px;
             color: #007a3e;
         }
@@ -711,13 +725,12 @@ header {
         a{
             padding-bottom: 10px;
             display: inline-block;
-            font-family: "Montserrat",sans-serif;
-            font-weight: 600;
+            font-weight: 400;
             position: relative;
+            transition: 0.5s;
             
             &:hover{
                 color: #007a3e;
-                font-weight: 700;
             }
         }
     } 
@@ -744,7 +757,6 @@ header {
                     text-overflow: ellipsis;
                     color: #007a3e;
                     font-weight: 800;
-                    font-family: "Cormorant",sans-serif;
                 }
             }
             p{
@@ -781,8 +793,8 @@ header {
 
 
         h2{
-            margin-bottom: 17.6px;
-            font-weight: 600;
+            margin-bottom: 18px;
+            font-weight: 400;
             
         }
         p{
@@ -848,7 +860,6 @@ footer{
     }
 
     a{
-         font-family: "Work sans",sans-serif;
          color: #FFFFFF;
          &:hover{
              color: #FFFFFF;
@@ -879,7 +890,6 @@ footer{
                 margin-bottom: 14px;
                 a{
                     font-size: 14px;
-                    font-family: "Work sans",sans-serif;
                 }
             }
         }
@@ -1186,7 +1196,7 @@ footer{
                 font-size: 14px;
             }
             h4{
-                font-family: 'Montserrat';
+
                 font-size: 18px;
                 font-weight: 400;
             }

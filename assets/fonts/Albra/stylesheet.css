@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Albra';
+    src: url('AlbraBlack.woff2') format('woff2'),
+        url('AlbraBlack.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Text';
+    src: url('AlbraTextBold.woff2') format('woff2'),
+        url('AlbraTextBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Semi';
+    src: url('AlbraSemi.woff2') format('woff2'),
+        url('AlbraSemi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('AlbraLight.woff2') format('woff2'),
+        url('AlbraLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('AlbraMedium.woff2') format('woff2'),
+        url('AlbraMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Text';
+    src: url('AlbraTextLight.woff2') format('woff2'),
+        url('AlbraTextLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Text';
+    src: url('AlbraTextBlack.woff2') format('woff2'),
+        url('AlbraTextBlack.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('AlbraRegular.woff2') format('woff2'),
+        url('AlbraRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra';
+    src: url('AlbraBold.woff2') format('woff2'),
+        url('AlbraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Text Semi';
+    src: url('AlbraTextSemi.woff2') format('woff2'),
+        url('AlbraTextSemi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Text';
+    src: url('AlbraTextMedium.woff2') format('woff2'),
+        url('AlbraTextMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Text';
+    src: url('AlbraTextRegular.woff2') format('woff2'),
+        url('AlbraTextRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
