@@ -1,5 +1,5 @@
 .generalHead h6 {
-  margin-bottom: 18.2px;
+  margin-bottom: 18px;
   letter-spacing: .25em;
   display: inline-block;
   position: relative;
@@ -9,7 +9,7 @@
 .generalHead h6::after {
   content: '';
   width: 70px;
-  height: 1px;
+  height: 0.5px;
   position: absolute;
   top: 50%;
   left: 130%;
@@ -17,14 +17,12 @@
 }
 
 .generalHead h2 {
-  margin-bottom: 17.6px;
+  margin-bottom: 18px;
 }
 
 .generalHead p {
-  font-family: "Work Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 32px;
-  font-weight: 400;
   margin-bottom: 0;
 }
 
@@ -118,7 +116,6 @@
   padding: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
 }
 
 .breadcrumb li ion-icon {
@@ -164,7 +161,7 @@ header {
 }
 
 header img {
-  width: 240px;
+  width: 200px;
 }
 
 header .menu-btn line {
@@ -176,6 +173,10 @@ header.solid-header {
   padding: 5px 0;
   -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 header.solid-header .solid {
@@ -191,6 +192,15 @@ header.solid-header img {
   height: 65px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+header.solid-header .nav-bottom li a {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+header.solid-header .nav-bottom li a i {
+  font-size: 10px;
 }
 
 header.solid-header .navs .menu-btn .line {
@@ -297,8 +307,6 @@ header .navs ul {
 header .navs ul li {
   display: inline;
   padding: 2px;
-  font-family: "Montserrat",sans-serif;
-  letter-spacing: 2px;
   position: relative;
 }
 
@@ -361,18 +369,11 @@ header .nav-top ul li a {
   line-height: 0;
   color: #fff;
   font-size: 13px;
-  font-weight: 400;
-}
-
-header .nav-top ul li a:hover {
-  font-weight: 450;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 header .nav-bottom li {
-  text-align: left !important;
-  -webkit-box-pack: left !important;
-      -ms-flex-pack: left !important;
-          justify-content: left !important;
   position: relative;
 }
 
@@ -392,6 +393,11 @@ header .nav-bottom li a {
   font-size: 15px;
   padding: 0 20px;
   font-weight: 600;
+}
+
+header .nav-bottom li a i {
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 .banner {
@@ -426,14 +432,14 @@ header .nav-bottom li a {
 }
 
 .banner .banner-text .text h1 {
-  margin-bottom: 28.8px;
+  margin-bottom: 28px;
 }
 
 .banner .banner-text .text h3 {
-  font-size: 36px;
-  font-style: italic;
-  line-height: 49px;
+  font-size: 24px;
+  line-height: 38px;
   margin-bottom: 60px;
+  font-weight: 100;
 }
 
 .banner .banner-text .text.about {
@@ -672,10 +678,10 @@ header .nav-bottom li a {
 
 .learn .learn-card img {
   width: 100%;
-  margin-bottom: 40px;
-  height: 246px;
+  height: 285px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .learn .learn-card img:last-child() {
@@ -683,10 +689,9 @@ header .nav-bottom li a {
 }
 
 .learn .learn-card h3 {
-  font-family: "Cormorant",sans-serif;
-  font-size: 27px;
+  font-size: 24px;
   line-height: 31px;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 14px;
   color: #007a3e;
 }
@@ -698,14 +703,14 @@ header .nav-bottom li a {
 .learn .learn-card a {
   padding-bottom: 10px;
   display: inline-block;
-  font-family: "Montserrat",sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .learn .learn-card a:hover {
   color: #007a3e;
-  font-weight: 700;
 }
 
 .learn.non .col-md-4:nth-child(even) {
@@ -730,7 +735,6 @@ header .nav-bottom li a {
   text-overflow: ellipsis;
   color: #007a3e;
   font-weight: 800;
-  font-family: "Cormorant",sans-serif;
 }
 
 .learn.non .learn-card p {
@@ -764,8 +768,8 @@ header .nav-bottom li a {
 }
 
 .small .start h2 {
-  margin-bottom: 17.6px;
-  font-weight: 600;
+  margin-bottom: 18px;
+  font-weight: 400;
 }
 
 .small .start p {
@@ -834,7 +838,6 @@ footer .pattern::before {
 }
 
 footer a {
-  font-family: "Work sans",sans-serif;
   color: #FFFFFF;
 }
 
@@ -870,7 +873,6 @@ footer .top .left .location {
 
 footer .top .left .location a {
   font-size: 14px;
-  font-family: "Work sans",sans-serif;
 }
 
 footer .top h6 {
@@ -1194,7 +1196,6 @@ footer .bottom .nav li:last-child {
 }
 
 .report .report-card .publish h4 {
-  font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 400;
 }

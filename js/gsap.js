@@ -15,13 +15,12 @@ pictureContainers.forEach((container) => {
   tl.set(container, { autoAlpha: 1 });
   tl.from(container, 1.5, {
     xPercent: -100,
-    ease: Power0.out
+    
   });
   tl.from(image, 1.5, {
     xPercent: 100,
     scale: 1.3,
     delay: -1.5,
-    ease: Power0.out
   });
 });
 
@@ -39,13 +38,13 @@ generalHeadContainers.forEach((container) => {
   tl.set(container, { autoAlpha: 1 });
   tl.from(container, 1.5, {
     yPercent: 20,
-    ease: Power0.out
+  
   });
   tl.from(image, 1.5, {
     yPercent: 20,
     scale: 1.3,
     delay: -1.5,
-    ease: Power0.out
+
   });
 });
 
@@ -64,17 +63,16 @@ gsap.from('.video', {
 })
 
 
-gsap.from('.mission', {
+gsap.from('.mission p', {
     scrollTrigger: {
         trigger: '.mission',
-        start: 'top bottom',
+        start: 'top center+=20%',
         end: "bottom bottom",
-        duration: 2,
-        toggleActions: "restart none none reset"
+        toggleActions: "restart none none reset",
     },
-
+    duration: 0.8,
     opacity: 0,
-    y: 250
+    y: 80
 })
 
 gsap.from('.para', {
@@ -82,7 +80,7 @@ gsap.from('.para', {
         trigger: '.para',
         start: 'top center ',
         end: "bottom bottom",
-        duration: 1,
+        
     },
 
     opacity: 0,
@@ -107,7 +105,7 @@ gsap.from('.foundation', {
         trigger: '.foundation',
         start: 'top center ',
         end: "bottom bottom",
-        duration: 1,
+        
        
     },
 
@@ -120,7 +118,7 @@ gsap.from('.at_glance', {
         trigger: '.at_glance',
         start: 'top center ',
         end: "bottom bottom",
-        duration: 1,
+        
        
     },
 
@@ -133,7 +131,7 @@ gsap.from('.small', {
         trigger: '.small',
         start: 'top center ',
         end: "bottom bottom",
-        duration: 1,
+        
        
     },
 
@@ -146,9 +144,9 @@ gsap.from('.image-card img', {
         trigger: '.gallery',
         start: 'top center ',
         end: "bottom bottom",
-        duration: 0.8,
+        
     },
-
+    duration: 0.8,
     opacity: 0,
     stagger: 0.5,
     y: -1
