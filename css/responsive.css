@@ -227,16 +227,20 @@
         font-size: 16px;
     } 
 
+    .profile .upper img {
+        width: 100%;
+    }
+
+    .profile .lower p{
+        width: calc(100% * 8/12);
+    }
+
     .award .text {
         margin: 0;
     }
 
     .award .picture{
         margin-top: 30px;
-    }
-
-    .profile .col-img{
-        margin-top: 100px;
     }
 
     .form-group .mid{
@@ -254,6 +258,7 @@
     .gallery .bottom .col-md-4:nth-last-child(even) {
         margin: 0 7px;
     }   
+
 }
 
 @media screen and (max-width: 768px) { 
