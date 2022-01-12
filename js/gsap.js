@@ -157,3 +157,23 @@ gsap.from('.intro', {
   duration: 1, 
   y: 250
 })
+
+gsap.to('.foundation .pattern', {
+  scrollTrigger: {
+    trigger: '.foundation',
+    start: 'bottom center+=20% ',
+    end: "bottom top",
+    scrub: 2,
+  },
+  x: 150
+})
+
+gsap.to('.para .relative-wrap .pattern', {
+  scrollTrigger: {
+    trigger: '.para',
+    start: 'center center-=20% ',
+    end: "bottom bottom",
+    scrub: 5,
+  },
+  y: -250
+})
