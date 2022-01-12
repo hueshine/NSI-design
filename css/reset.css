@@ -17,6 +17,19 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+
+.container-60 {
+    max-width: 910px;
+    margin: 0 auto;
+    width: 100%;
+} 
+
+.container-50 {
+    max-width: 570px;
+    margin: auto;
+    width: 100%;
+
+}
   
 ul{
     list-style: none;
