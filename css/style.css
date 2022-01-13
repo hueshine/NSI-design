@@ -1048,16 +1048,8 @@ footer .bottom .nav li:last-child {
   text-align: center;
 }
 
-.overview {
-  background-color: #FFFFFF;
-}
-
 .overview .principles {
   padding: 80px;
-}
-
-.overview .principles .heading h2 {
-  font-weight: 700;
 }
 
 .overview .principles .inner {
@@ -1337,7 +1329,6 @@ footer .bottom .nav li:last-child {
   text-transform: uppercase;
   color: #0e231a;
   margin: 10px 0 10px;
-  font-weight: 600;
 }
 
 .contact .co-inf a {
@@ -1373,10 +1364,7 @@ footer .bottom .nav li:last-child {
 }
 
 .contact .form .form-group label {
-  display: block;
-  width: 100%;
-  color: #333;
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 12px;
 }
 
