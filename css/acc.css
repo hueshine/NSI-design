@@ -1,0 +1,47 @@
+.accordion {
+  padding: 100px 0px;
+}
+
+.accordion .accordion-item {
+  width: 219px;
+  height: 50vh;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #fff;
+  text-align: center;
+  border: 0;
+}
+
+.accordion .accordion-item .accordion-title {
+  background-position: center;
+  width: 225px;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.accordion .accordion-item .accordion-title .overlay {
+  content: '';
+  position: absolute;
+  background: #00000063;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.accordion .accordion-item .accordion-title h4 {
+  z-index: 99;
+  padding-top: 180px;
+}
+
+.accordion .accordion-item .accordion-body {
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+/*# sourceMappingURL=acc.css.map */
