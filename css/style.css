@@ -1610,13 +1610,13 @@ footer .bottom .nav li:last-child {
 .vacancy .form table {
   width: 100%;
   text-align: center;
-  border: 1px solid #333;
+  border: 1px solid #d8e5d8;
   margin-bottom: 50px;
 }
 
 .vacancy .form table th {
-  border-right: 1px solid #333;
-  border-left: 1px solid #333;
+  border-right: 1px solid #d8e5d8;
+  border-left: 1px solid #d8e5d8;
   width: 33.33%;
   font-size: 14px;
   font-weight: 500;
@@ -1625,7 +1625,7 @@ footer .bottom .nav li:last-child {
 }
 
 .vacancy .form table tr {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #d8e5d8;
 }
 
 .vacancy .form table tr:nth-child(2) th {
@@ -1633,8 +1633,8 @@ footer .bottom .nav li:last-child {
 }
 
 .vacancy .form table td {
-  border-right: 1px solid #333;
-  border-left: 1px solid #333;
+  border-right: 1px solid #d8e5d8;
+  border-left: 1px solid #d8e5d8;
 }
 
 .vacancy .form table input {
