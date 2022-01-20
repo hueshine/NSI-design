@@ -1493,6 +1493,10 @@ footer .bottom .nav li:last-child {
   display: none;
 }
 
+.vacancy .header h3 {
+  font-size: 32px;
+}
+
 .vacancy .form h4 {
   margin: 56px 0 24px;
   color: #007a3e;
