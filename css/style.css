@@ -516,7 +516,7 @@ header .nav-bottom li a i {
 
 .banner.non {
   position: relative;
-  height: 500px;
+  height: 400px;
 }
 
 .banner.non .text {
@@ -527,7 +527,7 @@ header .nav-bottom li a i {
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   width: 82%;
-  margin-top: 290px;
+  margin-top: 300px;
 }
 
 .banner.non .text h1 {
@@ -1491,5 +1491,190 @@ footer .bottom .nav li:last-child {
 
 .timeline .owl-nav .owl-next span {
   display: none;
+}
+
+.vacancy .form h4 {
+  margin: 56px 0 24px;
+  color: #007a3e;
+}
+
+.vacancy .form h4.next {
+  margin: 90px 0 40px;
+}
+
+.vacancy .form h6 {
+  font-size: 14px;
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+.vacancy .form form {
+  padding: 0 80px;
+}
+
+.vacancy .form form input, .vacancy .form form select {
+  border: 0;
+  background-color: #d8e5d8;
+  height: 32px;
+  width: 100%;
+  padding-left: 16px;
+  font-size: 14px;
+}
+
+.vacancy .form form input:focus-visible, .vacancy .form form select:focus-visible {
+  outline: none;
+}
+
+.vacancy .form form input[type="radio"], .vacancy .form form select[type="radio"] {
+  height: auto;
+  width: auto;
+}
+
+.vacancy .form form label {
+  padding-right: 32px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.vacancy .form form label span {
+  text-transform: lowercase;
+  margin-left: -8px;
+}
+
+.vacancy .form form .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -10px !important;
+}
+
+.vacancy .form form .check input {
+  width: auto;
+  margin-right: 16px;
+  margin-top: -12px;
+}
+
+.vacancy .form form .form-group {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #00000050;
+  border-width: 90%;
+}
+
+.vacancy .form form .form-group .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vacancy .form form .form-group .col {
+  display: -ms-grid;
+  display: grid;
+}
+
+.vacancy .form form .form-group .col.counsel {
+  display: block;
+}
+
+.vacancy .form form .form-group div, .vacancy .form form .form-group ul {
+  margin: 10px 0;
+}
+
+.vacancy .form form .form-group ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vacancy .form form .form-group ul li {
+  padding-right: 24px;
+  font-size: 14px;
+}
+
+.vacancy .form form .form-group ul li input {
+  margin-right: 8px;
+}
+
+.vacancy .form form .form-group ul li label {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.vacancy .form table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #333;
+  margin-bottom: 50px;
+}
+
+.vacancy .form table th {
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+  width: 33.33%;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 0;
+  text-transform: uppercase;
+}
+
+.vacancy .form table tr {
+  border-bottom: 1px solid #333;
+}
+
+.vacancy .form table tr:nth-child(2) th {
+  width: 15%;
+}
+
+.vacancy .form table td {
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+}
+
+.vacancy .form table input {
+  background-color: #fff;
+  width: 100%;
+}
+
+.vacancy .form h6 {
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 9px;
+}
+
+.vacancy .form .ttr h5 {
+  margin: 60px 0 40px;
+}
+
+.vacancy .form .ttr li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.vacancy .form .ttr label {
+  padding: 6px 0 0 24px;
+}
+
+.vacancy .form .ttr input {
+  padding: 2px 0 0 8px;
+  background-color: transparent;
+  width: auto;
+}
+
+.vacancy .form .general-button {
+  text-align: center;
+}
+
+.vacancy .form .general-button a {
+  margin-top: 50px;
+  padding: 15px 25px;
 }
 /*# sourceMappingURL=style.css.map */

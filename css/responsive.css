@@ -284,6 +284,18 @@
         width: 100%;
     }
 
+    .vacancy form{
+        padding: 0 20px !important;
+    }
+
+    .vacancy .radio{
+        
+        display: grid !important;
+    }
+
+    .vacancy .ttr input {
+        width: 30% !important;
+    }
 }
 
 @media screen and (max-width: 480px) { 
@@ -415,6 +427,17 @@
         height: 395px;
     }
 
+    .vacancy form{
+        padding: 10px !important;
+    }
+
+    .vacancy .ttr li{
+        display: block !important;
+    }
+
+    .vacancy .ttr li input{
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 280px){

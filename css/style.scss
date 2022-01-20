@@ -523,7 +523,7 @@ header {
     }
     &.non{
         position: relative;
-        height: 500px;
+        height: 400px;
 
         .text{
             position: absolute;
@@ -532,7 +532,7 @@ header {
             left: 50%;
             transform: translate(-50%, 50%);
             width: 82%;
-            margin-top: 290px;
+            margin-top: 300px;
             
             h1{
                 text-transform: uppercase;
@@ -1376,7 +1376,6 @@ footer{
     }
 }
 
-
 .timeline{
     position: relative;
     
@@ -1508,4 +1507,171 @@ footer{
         }
     }
     
+}
+
+.vacancy{
+    
+    .form{
+        h4{
+            margin: 56px 0 24px ;
+            color: #007a3e;
+            &.next{
+                margin: 90px 0 40px;
+            }
+        }
+        h6{
+            font-size: 14px;
+            text-transform: lowercase;
+            font-weight: 400;
+        }
+        form{
+            padding: 0 80px;
+
+            input, select{
+                border: 0;
+                background-color: #d8e5d8;
+                height: 32px;
+                width: 100%;
+                padding-left: 16px;
+                font-size: 14px;
+                &:focus-visible {
+                    outline: none;
+                }
+
+                &[type="radio"]{
+                    height: auto;
+                    width: auto;
+                }
+            }
+
+            label{
+                padding-right: 32px;
+                font-size: 14px;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+                span{
+                    text-transform: lowercase;
+                    margin-left: -8px;
+                }
+            }
+
+            .check{
+                display: flex;
+                align-items: center;
+                margin-bottom: -10px !important;
+
+                input{
+                    width: auto;
+                    margin-right: 16px;
+                    margin-top: -12px;
+                }
+            }
+
+            
+            .form-group{
+                padding-top: 50px;
+                padding-bottom: 30px;
+                align-items: center;
+                border-bottom: 1px solid #00000050;
+                border-width: 90%;
+
+                .radio{
+                    display: flex;
+                }
+                .col{
+                    display: grid;
+
+                    &.counsel{
+                        display: block;
+                    }
+                }    
+
+                div, ul{
+                    margin: 10px 0;
+                }
+                
+                ul{
+                    display: flex;
+
+                    li{
+                        padding-right: 24px;
+                        font-size: 14px;
+                        input{
+                            margin-right: 8px;
+                        }
+                        label{
+                            font-size: 14px;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    
+        table{
+            width: 100%;
+            text-align: center;
+            border: 1px solid #333;
+            margin-bottom: 50px ;
+
+            th{
+                border-right: 1px solid #333;
+                border-left: 1px solid #333;
+                width: 33.33%;
+                font-size: 14px;
+                font-weight: 500;
+                padding: 8px 0;
+                text-transform: uppercase;
+            }
+
+            tr{
+                border-bottom: 1px solid #333;
+                &:nth-child(2){
+                    th{
+                        width: 15%;
+                    }
+                }
+            }
+            td{
+                border-right: 1px solid #333;
+                border-left: 1px solid #333;
+            }
+            input{
+                background-color: #fff;
+                width: 100%;
+            }
+        }
+
+        h6{
+            font-size: 14px;
+            font-weight: 600;
+            padding-top: 9px;
+        
+        }
+        .ttr{
+            h5{
+                margin: 60px 0 40px;
+            }
+            li{
+                display: flex;
+                margin-bottom: 8px;
+            }
+            label{
+                padding: 6px 0 0 24px;
+            }
+            input{
+                padding: 2px 0 0 8px;
+                background-color: transparent;
+                width: auto;
+            }
+
+        }
+        .general-button{
+            text-align: center;
+            a {
+                margin-top: 50px;
+                padding: 15px 25px;
+            }
+        }
+    }
 }
