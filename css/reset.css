@@ -88,6 +88,10 @@ p{
     
 }
 
+.italic{
+    font-style: italic;
+}
+
 .right{
     text-align: right;
 }

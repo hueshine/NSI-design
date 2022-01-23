@@ -26,10 +26,10 @@ menuBtn.addEventListener('click',(e) => {
     navBox.classList.toggle("open")
 })
 
-// closeBtn.addEventListener('click',(e) => {
-//     e.preventDefault();
-//     navBox.classList.remove("open")
-// })
+closeBtn.addEventListener('click',(e) => {
+    e.preventDefault();
+    navBox.classList.remove("open")
+})
 }
 
 function customPager () {
