@@ -120,14 +120,6 @@
   overflow: hidden;
 }
 
-.part {
-  margin: 140px auto;
-}
-
-.part.small {
-  margin: 70px 0;
-}
-
 .spacing {
   padding-right: calc(var(--bs-gutter-x) * 0.8);
   padding-left: calc(var(--bs-gutter-x) * 0.8);
@@ -1137,6 +1129,10 @@ footer .bottom .nav li:last-child {
   margin-top: 40px;
 }
 
+.prof-text .picture {
+  margin: 40px 0;
+}
+
 .prof-text p {
   margin-bottom: 50px;
 }
@@ -1698,12 +1694,9 @@ footer .bottom .nav li:last-child {
   background-color: #0e231a;
 }
 
-.accordion .items .accordion-item .accordion-button h2 {
+.accordion .items .accordion-item .accordion-button h3 {
   color: #fff;
-}
-
-.accordion .items .accordion-item .accordion-button:not(.collapsed) {
-  color: red;
+  text-transform: uppercase;
 }
 
 .accordion .items .accordion-item .accordion-button::after {

@@ -123,14 +123,6 @@
     overflow: hidden;
 }
 
-.part{
-    margin: 140px auto;
-
-    &.small {
-        margin: 70px 0;
-    }
-}
-
 .spacing{
     padding-right: calc(var(--bs-gutter-x) * 0.8);
     padding-left: calc(var(--bs-gutter-x) * 0.8);
@@ -1141,6 +1133,10 @@ footer{
         }
     }
 
+    .picture{
+        margin: 40px 0;
+    }
+
     p {
         margin-bottom: 50px;
     }
@@ -1698,12 +1694,9 @@ footer{
         .accordion-item {
             .accordion-button{
                 background-color: #0e231a;
-                h2{
+                h3{
                     color: #fff;
-                }
-                &:not(.collapsed) {
-                    color: red;
-                    
+                    text-transform: uppercase;
                 }
             }
             .accordion-button::after {

@@ -30,6 +30,20 @@ body {
     width: 100%;
 
 }
+
+.part{
+    margin: 140px auto;
+
+}
+
+.part .small{
+    margin: 70px 0;
+}
+
+.part-small {
+    margin: 70px 0 140px;
+}
+
   
 ul{
     list-style: none;
