@@ -34,6 +34,14 @@
   margin-bottom: 0;
 }
 
+.generalHead a {
+  color: #0e231a;
+}
+
+.generalHead a:hover {
+  color: #007a3e;
+}
+
 .general-btm {
   color: #007a3e;
   font-size: 13px;
@@ -178,6 +186,10 @@
   top: 10px;
   left: 0;
   border-radius: 50%;
+}
+
+.bullet li p {
+  margin: 8px 0 !important;
 }
 
 .full {
@@ -1130,7 +1142,7 @@ footer .bottom .nav li:last-child {
 }
 
 .prof-text .picture {
-  margin: 40px 0;
+  margin: 50px 0;
 }
 
 .prof-text p {
@@ -1678,16 +1690,20 @@ footer .bottom .nav li:last-child {
   padding: 15px 25px;
 }
 
-.accordion .picture img {
+.accordion .pic img {
   width: 90%;
 }
 
-.accordion .picture img.components {
+.accordion .pic img.components {
   width: 60%;
 }
 
 .accordion .items {
   padding: 50px 0;
+}
+
+.accordion .items .accordion-item p {
+  margin: 30px 0;
 }
 
 .accordion .items .accordion-item .accordion-button {
@@ -1699,7 +1715,40 @@ footer .bottom .nav li:last-child {
   text-transform: uppercase;
 }
 
+.accordion .items .accordion-item .accordion-button:focus {
+  outline: none;
+  border-color: none !important;
+  -webkit-box-shadow: 0 !important;
+          box-shadow: 0 !important;
+}
+
+.accordion .items .accordion-item .accordion-button.collapsed::after {
+  background-image: url(../images/chevron-down-outline.png);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
 .accordion .items .accordion-item .accordion-button::after {
-  background-image: none;
+  background-image: url(../images/chevron-down-outline.png);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.accordion .items .accordion-item h5 {
+  margin-top: 20px;
+}
+
+.accordion .items .accordion-item h5:first-child {
+  margin-top: 0;
+}
+
+.accordion h2 {
+  margin-top: 50px;
+}
+
+.pro h5 {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
