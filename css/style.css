@@ -135,7 +135,7 @@
 
 .breadcrumb {
   color: #FFFFFF;
-  padding: 10px 16px;
+  padding: 10px 0px;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -192,6 +192,12 @@
   margin: 8px 0 !important;
 }
 
+.bullet.sec li::before {
+  width: 8px;
+  height: 8px;
+  background: #007a3e;
+}
+
 .full {
   position: fixed;
   background: #000000ba;
@@ -234,6 +240,77 @@
 .full .close-btn ion-icon svg {
   font-size: 22px;
   color: #fff;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #d8e5d8;
+  margin-bottom: 50px;
+}
+
+table th {
+  border-right: 1px solid #d8e5d8;
+  border-left: 1px solid #d8e5d8;
+  width: 33.33%;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 0;
+  text-transform: uppercase;
+}
+
+table tr {
+  border-bottom: 1px solid #d8e5d8;
+}
+
+table tr:nth-child(2) th {
+  width: 15%;
+}
+
+table td {
+  border-right: 1px solid #d8e5d8;
+  border-left: 1px solid #d8e5d8;
+}
+
+table input {
+  background-color: #fff;
+  width: 100%;
+}
+
+table.training {
+  margin-top: 32px;
+}
+
+table.training td {
+  height: 48px;
+}
+
+table.training-map {
+  margin-top: 32px;
+}
+
+table.training-map th:nth-child(1) {
+  width: 60%;
+}
+
+table.training-map th:nth-child(2) {
+  width: 20%;
+}
+
+table.training-map th:nth-child(3) {
+  width: 20%;
+}
+
+.pic {
+  margin-top: 32px;
+}
+
+.pic img {
+  width: 90%;
+}
+
+.pic img.components {
+  width: 60%;
 }
 
 header {
@@ -370,6 +447,12 @@ header .navs ul li .dropdown-menu {
   position: absolute;
   width: 245px;
   top: 30px;
+}
+
+header .navs ul li .dropdown-menu#scroll2 {
+  height: 245px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 header .navs ul li .dropdown-menu li {
@@ -530,7 +613,7 @@ header .nav-bottom li a i {
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
-  width: 82%;
+  width: 100%;
   margin-top: 300px;
 }
 
@@ -1619,41 +1702,6 @@ footer .bottom .nav li:last-child {
   text-transform: capitalize;
 }
 
-.vacancy .form table {
-  width: 100%;
-  text-align: center;
-  border: 1px solid #d8e5d8;
-  margin-bottom: 50px;
-}
-
-.vacancy .form table th {
-  border-right: 1px solid #d8e5d8;
-  border-left: 1px solid #d8e5d8;
-  width: 33.33%;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 8px 0;
-  text-transform: uppercase;
-}
-
-.vacancy .form table tr {
-  border-bottom: 1px solid #d8e5d8;
-}
-
-.vacancy .form table tr:nth-child(2) th {
-  width: 15%;
-}
-
-.vacancy .form table td {
-  border-right: 1px solid #d8e5d8;
-  border-left: 1px solid #d8e5d8;
-}
-
-.vacancy .form table input {
-  background-color: #fff;
-  width: 100%;
-}
-
 .vacancy .form h6 {
   font-size: 14px;
   font-weight: 600;
@@ -1690,14 +1738,6 @@ footer .bottom .nav li:last-child {
   padding: 15px 25px;
 }
 
-.accordion .pic img {
-  width: 90%;
-}
-
-.accordion .pic img.components {
-  width: 60%;
-}
-
 .accordion .items {
   padding: 50px 0;
 }
@@ -1713,6 +1753,9 @@ footer .bottom .nav li:last-child {
 .accordion .items .accordion-item .accordion-button h3 {
   color: #fff;
   text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 .accordion .items .accordion-item .accordion-button:focus {
@@ -1750,5 +1793,18 @@ footer .bottom .nav li:last-child {
 
 .pro h5 {
   margin-top: 30px;
+}
+
+#scroll2::-webkit-scrollbar {
+  width: 8px;
+  height: 2px;
+}
+
+#scroll2::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+#scroll2::-webkit-scrollbar-thumb {
+  background: #808080;
 }
 /*# sourceMappingURL=style.css.map */

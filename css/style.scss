@@ -136,9 +136,8 @@
 
 .breadcrumb{
     color: #FFFFFF;
-    padding: 10px 16px;
+    padding: 10px 0px;
     position: absolute;
-    // top: 100%;
     left: 50%;
     transform: translate(-50%);
 
@@ -154,13 +153,11 @@
         a {
             font-weight: 100;
             
-        }
-       
+        }       
 
         ion-icon {
             
             margin: 0 8px -3px 14px;
-            // margin-bottom: -3px;
             font-size: 16px;
         }
 
@@ -193,6 +190,15 @@
         }
         p{
             margin: 8px 0 !important;
+        }
+    }
+    &.sec{
+        li{
+            &::before{
+                width: 8px;
+                height: 8px;
+                background: #007a3e;
+            }
         }
     }
 }
@@ -237,6 +243,70 @@
                 color: #fff;
             }
             
+        }
+    }
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #d8e5d8;
+    margin-bottom: 50px ;
+
+    th{
+        border-right: 1px solid #d8e5d8;
+        border-left: 1px solid #d8e5d8;
+        width: 33.33%;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 0;
+        text-transform: uppercase;
+    }
+
+    tr{
+        border-bottom: 1px solid #d8e5d8;
+        &:nth-child(2){
+            th{
+                width: 15%;
+            }
+        }
+    }
+    td{
+        border-right: 1px solid #d8e5d8;
+        border-left: 1px solid #d8e5d8;
+    }
+    input{
+        background-color: #fff;
+        width: 100%;
+    }
+    &.training{
+        margin-top: 32px;
+        td{
+            height: 48px;
+        }
+    }
+    &.training-map{
+        margin-top: 32px;
+        th{
+            &:nth-child(1){
+                width: 60%;
+            }
+            &:nth-child(2){
+                width: 20%;
+            }
+            &:nth-child(3){
+                width: 20%;
+            }
+        }
+    }
+}
+
+.pic{
+    margin-top: 32px;
+    img{
+        width: 90%;
+        &.components{
+            width: 60%;
         }
     }
 }
@@ -369,8 +439,14 @@ header {
                     position: absolute;
                     width: 245px;
                     top: 30px;
-                    // margin: 24px auto;
 
+                    &#scroll2{
+                        height: 245px;
+                        overflow-y: scroll;
+                        overflow-x: hidden;
+                   
+                    }
+                    
                     li {
                         display: block;
                         margin-top: 20px;
@@ -532,7 +608,7 @@ header {
             top: 50%;
             left: 50%;
             transform: translate(-50%, 50%);
-            width: 82%;
+            width: 100%;
             margin-top: 300px;
             
             h1{
@@ -1619,40 +1695,6 @@ footer{
                 }
             }
         }
-    
-        table{
-            width: 100%;
-            text-align: center;
-            border: 1px solid #d8e5d8;
-            margin-bottom: 50px ;
-
-            th{
-                border-right: 1px solid #d8e5d8;
-                border-left: 1px solid #d8e5d8;
-                width: 33.33%;
-                font-size: 14px;
-                font-weight: 500;
-                padding: 8px 0;
-                text-transform: uppercase;
-            }
-
-            tr{
-                border-bottom: 1px solid #d8e5d8;
-                &:nth-child(2){
-                    th{
-                        width: 15%;
-                    }
-                }
-            }
-            td{
-                border-right: 1px solid #d8e5d8;
-                border-left: 1px solid #d8e5d8;
-            }
-            input{
-                background-color: #fff;
-                width: 100%;
-            }
-        }
 
         h6{
             font-size: 14px;
@@ -1690,14 +1732,6 @@ footer{
 
 .accordion{
 
-    .pic{
-        img{
-            width: 90%;
-            &.components{
-                width: 60%;
-            }
-        }
-    }
     .items{
         padding: 50px 0;
         .accordion-item {
@@ -1709,14 +1743,11 @@ footer{
                 h3{
                     color: #fff;
                     text-transform: uppercase;
+                    font-size: 22px;
+                    font-weight: 300;
+                    letter-spacing: 0.5px;
                 }
             }
-            // &.collapsed{
-            //     ::after {
-            //         transform: rotate(-180deg);
-                    
-            //     }
-            // }
             .accordion-button {
 
                 &:focus {
@@ -1758,4 +1789,18 @@ footer{
         margin-top: 30px;
         
     }
+}
+
+
+#scroll2::-webkit-scrollbar {
+    width: 8px;
+    height: 2px;
+}
+#scroll2::-webkit-scrollbar-track {
+    background: #ccc; 
+    
+}
+#scroll2::-webkit-scrollbar-thumb {
+    background: #808080;
+    // background: #0e231a;
 }
