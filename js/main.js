@@ -18,7 +18,7 @@ const menuBtn = document.querySelector('.menu-btn');
 if(menuBtn) {
     
 const navBox = document.querySelector('.navs')
-
+let closeBtn = document.querySelector(".close-btn");
 menuBtn.addEventListener('click',(e) => {
     e.preventDefault();
     menuBtn.classList.toggle('open')
@@ -26,11 +26,13 @@ menuBtn.addEventListener('click',(e) => {
     navBox.classList.toggle("open")
 })
 
-closeBtn.addEventListener('click',(e) => {
-    e.preventDefault();
-    navBox.classList.remove("open")
-})
+if(closeBtn) {
+    closeBtn.addEventListener('click',(e) => {
+        e.preventDefault();
+        navBox.classList.remove("open")
+    })
 }
+
 
 function customPager () {
     console.log("changes")
@@ -59,6 +61,8 @@ $('.slide').owlCarousel({
 
 $('.timeline').owlCarousel({
     loop: false,
+    autoPlay: true,
+    autoplayTimeout: 100,
     pagination: true,
     paginationNumbers: false,
     nav:true,
@@ -78,16 +82,17 @@ $('.timeline').owlCarousel({
 })
 
 
-let popUp = document.querySelector(".popup");
-let closeBtn = document.querySelector(".close-btn");
-let page = document.querySelector(".full");
+// let popUp = document.querySelector(".popup");
+// // let closeBtnModal = document.querySelector(".full .close-btn");
+// let page = document.querySelector(".full");
 
-popUp.addEventListener('click', ()=> {
-    page.classList.toggle('active')
+// popUp.addEventListener('click', ()=> {
+//     page.classList.toggle('active')
     
-})
-closeBtn.addEventListener('click',(e) => {
-    page.classList.remove("active")
-})
+// })
+// closeBtnModal.addEventListener('click',(e) => {
+//     page.classList.remove("active")
+// })
 
 
+}

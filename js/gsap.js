@@ -139,18 +139,6 @@ gsap.from('.small', {
     y: 20
 })
 
-gsap.from('.image-card img', {
-    scrollTrigger: {
-        trigger: '.gallery',
-        start: 'top center ',
-        end: "bottom bottom",
-        
-    },
-    duration: 0.8,
-    opacity: 0,
-    stagger: 0.5,
-    y: -1
-})
 
 gsap.from('.intro', {
   opacity:0,
@@ -158,22 +146,16 @@ gsap.from('.intro', {
   y: 250
 })
 
-gsap.to('.foundation .pattern', {
-  scrollTrigger: {
-    trigger: '.foundation',
-    start: 'bottom center+=20% ',
-    end: "bottom top",
-    scrub: 2,
-  },
-  x: 150
-})
 
-gsap.to('.para .relative-wrap .pattern', {
+gsap.from('.lists .learn-card', {
   scrollTrigger: {
-    trigger: '.para',
-    start: 'center center-=20% ',
-    end: "bottom bottom",
-    scrub: 5,
+      trigger: '.learn-card',
+      start: 'top center+=80% ',
+      end: "bottom bottom",
+      
   },
-  y: -250
+  duration: 1,
+  opacity: 0,
+  stagger: 0.5,
+  y: 250
 })

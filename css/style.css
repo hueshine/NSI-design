@@ -55,7 +55,7 @@
 }
 
 .general-btm:hover::after {
-  width: 145px;
+  width: 130px;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
@@ -65,7 +65,7 @@
   position: absolute;
   bottom: 5%;
   left: 0%;
-  width: 145px;
+  width: 130px;
   height: 1px;
   background-color: #007a3e;
   -webkit-transition: 0.5s;
@@ -105,8 +105,9 @@
 }
 
 .general-button a {
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 3px;
+  text-transform: uppercase;
   border: 1px solid #007a3e;
   display: inline-block;
   color: #FFFFFF;
@@ -137,6 +138,10 @@
   color: #FFFFFF;
   padding: 10px 0px;
   position: absolute;
+  margin-top: -20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -178,12 +183,11 @@
 
 .bullet li::before {
   content: '';
-  width: 12px;
-  height: 12px;
-  background: transparent;
-  border: 2px solid #007a3e;
+  width: 6px;
+  height: 6px;
+  background: #007a3e;
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 0;
   border-radius: 50%;
 }
@@ -192,10 +196,12 @@
   margin: 8px 0 !important;
 }
 
-.bullet.sec li::before {
-  width: 8px;
-  height: 8px;
-  background: #007a3e;
+.bullet li.space {
+  margin-top: 20px;
+}
+
+.bullet.general li::before {
+  top: 8px;
 }
 
 .full {
@@ -254,7 +260,7 @@ table th {
   border-left: 1px solid #d8e5d8;
   width: 33.33%;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 8px 0;
   text-transform: uppercase;
 }
@@ -273,7 +279,6 @@ table td {
 }
 
 table input {
-  background-color: #fff;
   width: 100%;
 }
 
@@ -283,10 +288,15 @@ table.training {
 
 table.training td {
   height: 48px;
+  padding: 8px 0;
 }
 
 table.training-map {
   margin-top: 32px;
+}
+
+table.training-map th {
+  font-size: 16px;
 }
 
 table.training-map th:nth-child(1) {
@@ -299,6 +309,10 @@ table.training-map th:nth-child(2) {
 
 table.training-map th:nth-child(3) {
   width: 20%;
+}
+
+table.training-map td {
+  padding: 8px 0;
 }
 
 .pic {
@@ -320,6 +334,7 @@ header {
           box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.19);
   width: 100%;
   z-index: 8;
+  position: relative;
 }
 
 header.fixed-header {
@@ -333,7 +348,7 @@ header img {
 }
 
 header .menu-btn line {
-  background-color: #FFFFFF;
+  background-color: #80c243;
 }
 
 header .menu-btn {
@@ -367,7 +382,7 @@ header .menu-btn .line {
   width: 25px;
   height: 1px;
   margin: 8px 0;
-  background-color: #ffffff;
+  background-color: #80c243;
 }
 
 header .navs.open {
@@ -450,7 +465,7 @@ header .navs ul li .dropdown-menu {
 }
 
 header .navs ul li .dropdown-menu#scroll2 {
-  height: 245px;
+  height: 67vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -673,6 +688,8 @@ header .nav-bottom li a i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -684,16 +701,17 @@ header .nav-bottom li a i {
 
 .slider .slide .item .text {
   padding-right: 60px;
+  width: 40%;
   margin: auto;
 }
 
-.slider .slide .item .text h4 {
+.slider .slide .item .text h2 {
   color: #007a3e;
   text-transform: uppercase;
 }
 
 .slider .slide .item .picture {
-  width: 648px;
+  width: 60%;
   height: 400px;
 }
 
@@ -725,18 +743,23 @@ header .nav-bottom li a i {
 .slider .slide .owl-dots button {
   border: none;
   color: #007a3e;
-  padding: 4px 10px;
+  padding: 11px 14px;
   text-transform: uppercase;
   border: 1px solid transparent;
+  margin-right: 8px;
+  font-size: 12px;
 }
 
 .slider .slide .owl-dots button:hover {
   color: #007a3e;
   border: 1px solid #007a3e;
+  border-radius: 30px;
 }
 
-.slider .slide .owl-dots .owl-dot.active {
+.slider .slide .owl-dots .owl-dot.active button {
   border: 1px solid #007a3e;
+  border-radius: 30px;
+  padding: 10px 30px;
 }
 
 .foundation {
@@ -765,7 +788,7 @@ header .nav-bottom li a i {
 .foundation .inner .generalHead {
   width: 56%;
   height: 100%;
-  padding: 10% 72px;
+  padding: 8% 72px 10%;
   color: #fff;
   position: relative;
 }
@@ -790,32 +813,13 @@ header .nav-bottom li a i {
 }
 
 .learn .picture {
-  padding: 40px;
+  height: 220px;
+  padding-bottom: 24px;
 }
 
 .learn .picture img {
   width: 100%;
-}
-
-.learn .picture .general-btm::before {
-  bottom: -35%;
-  left: 39%;
-  width: 270px;
-}
-
-.learn .picture .general-btm::after {
-  bottom: -20%;
-  left: 43%;
-}
-
-.learn .picture .general-btm:hover::before {
-  width: 0;
-}
-
-.learn .picture .general-btm:hover::after {
-  width: 170px;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  height: 100%;
 }
 
 .learn .row {
@@ -825,12 +829,8 @@ header .nav-bottom li a i {
   margin-right: 0;
 }
 
-.learn .col-md-4 {
-  width: 31%;
-}
-
-.learn .col-md-4:nth-child(even) {
-  margin: 0 45.5px;
+.learn .learn-card {
+  padding: 32px 20px;
 }
 
 .learn .learn-card h3 {
@@ -1139,13 +1139,12 @@ footer .bottom .nav li:last-child {
   z-index: 1;
 }
 
-.members .column .card-overlay:hover::before {
+.members .column .card-overlay:hover ::before {
   background: #0e231acc;
 }
 
 .members .column .card-overlay .text-overlay {
   top: 80%;
-  left: 3%;
   right: 0;
   height: 25%;
   text-align: center;
@@ -1423,12 +1422,9 @@ footer .bottom .nav li:last-child {
   border: 0;
 }
 
-.contact .form .general-button {
-  text-align: center;
-}
-
 .contact .form .general-button a {
-  margin-top: 20px;
+  margin-top: 32px;
+  margin-left: 20px;
   padding: 25px 25px;
 }
 
@@ -1452,8 +1448,13 @@ footer .bottom .nav li:last-child {
   margin: 50px 0;
 }
 
-.award .text p {
-  margin-bottom: 10px;
+.award .text .space {
+  margin-bottom: 24px;
+}
+
+.award .text .space:last-child {
+  margin-top: 24px;
+  margin-bottom: 0;
 }
 
 .timeline {
@@ -1519,7 +1520,7 @@ footer .bottom .nav li:last-child {
   color: #FFFFFF;
   display: table;
   letter-spacing: -1px;
-  padding: 0 10px;
+  padding: 0 8px;
   background-color: #007a3e;
   z-index: 1;
   position: relative;
@@ -1566,18 +1567,33 @@ footer .bottom .nav li:last-child {
   position: absolute;
   top: 270px;
   left: 5px;
-  border: 1px solid #0e231a;
+  border: 1px solid #B7852C;
   border-radius: 4px;
   padding-top: 5px;
   width: 56px;
   height: 32px;
   color: #fff;
-  background: #0e231a;
+  background: #B7852C;
   opacity: 0.9;
 }
 
 .timeline .owl-nav .owl-prev span {
   display: none;
+}
+
+.timeline .owl-nav .owl-next::after {
+  content: 'After';
+  position: absolute;
+  top: 270px;
+  right: 5px;
+  border: 1px solid #B7852C;
+  border-radius: 4px;
+  padding-top: 5px;
+  width: 56px;
+  height: 32px;
+  color: #fff;
+  background: #B7852C;
+  opacity: 0.9;
 }
 
 .timeline .owl-nav .owl-next span {
@@ -1623,6 +1639,15 @@ footer .bottom .nav li:last-child {
 .vacancy .form form input[type="radio"], .vacancy .form form select[type="radio"] {
   height: auto;
   width: auto;
+}
+
+.vacancy .form form table tr th {
+  color: #fff;
+  background-color: #0e231a;
+}
+
+.vacancy .form form table tr input {
+  background-color: #fff;
 }
 
 .vacancy .form form label {
@@ -1717,6 +1742,14 @@ footer .bottom .nav li:last-child {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 8px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vacancy .form .ttr li p, .vacancy .form .ttr li .attachment {
+  width: 50%;
 }
 
 .vacancy .form .ttr label {
@@ -1735,7 +1768,7 @@ footer .bottom .nav li:last-child {
 
 .vacancy .form .general-button a {
   margin-top: 50px;
-  padding: 15px 25px;
+  padding: 15px 25px 10px;
 }
 
 .accordion .items {
@@ -1744,6 +1777,10 @@ footer .bottom .nav li:last-child {
 
 .accordion .items .accordion-item p {
   margin: 30px 0;
+}
+
+.accordion .items .accordion-item p.non {
+  margin-bottom: 0;
 }
 
 .accordion .items .accordion-item .accordion-button {
@@ -1756,6 +1793,11 @@ footer .bottom .nav li:last-child {
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 0.5px;
+}
+
+.accordion .items .accordion-item .accordion-button h4 {
+  color: #fff;
+  font-size: 22px;
 }
 
 .accordion .items .accordion-item .accordion-button:focus {
@@ -1791,8 +1833,61 @@ footer .bottom .nav li:last-child {
   margin-top: 50px;
 }
 
-.pro h5 {
-  margin-top: 30px;
+.general .picture {
+  width: 80%;
+}
+
+.generalBody {
+  padding: 100px 80px 50px;
+}
+
+.generalBody .body {
+  margin-bottom: 50px;
+}
+
+.generalBody .body h3 {
+  color: #007a3e;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.generalBody .body h5 {
+  font-size: 22px;
+  margin: 20px 0 10px;
+}
+
+.generalBody .body h6 {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.hsp h5 {
+  margin: 20px 0 10px;
+}
+
+.info .lists {
+  padding: 40px;
+}
+
+.current .header {
+  color: #fff;
+  padding: 12px 8px;
+}
+
+.current .header h4 {
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+.current .body {
+  padding: 40px;
+}
+
+.current .body h6 {
+  margin-bottom: 10px;
 }
 
 #scroll2::-webkit-scrollbar {
