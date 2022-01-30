@@ -457,8 +457,8 @@ header .navs ul li .dropdown-menu {
   visibility: hidden;
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   position: absolute;
   width: 245px;
   top: 30px;
@@ -491,15 +491,15 @@ header .navs ul li .dropdown-menu:nth-child(1) {
   width: 200px;
 }
 
-header .nav-top ul li {
+header .navs .nav-top ul li {
   margin: 10px 18px;
 }
 
-header .nav-top ul li:last-child {
+header .navs .nav-top ul li:last-child {
   margin-right: 0;
 }
 
-header .nav-top ul li a {
+header .navs .nav-top ul li a {
   line-height: 0;
   color: #333;
   font-size: 13px;
@@ -507,16 +507,16 @@ header .nav-top ul li a {
   letter-spacing: 2px;
 }
 
-header .nav-bottom li {
+header .navs .nav-bottom li {
   position: relative;
 }
 
-header .nav-bottom li:last-child a {
+header .navs .nav-bottom li:last-child a {
   padding-right: 0px;
   padding-bottom: 40px;
 }
 
-header .nav-bottom li a {
+header .navs .nav-bottom li a {
   position: relative;
   text-align: left !important;
   -webkit-box-pack: left !important;
@@ -529,7 +529,7 @@ header .nav-bottom li a {
   font-weight: 500;
 }
 
-header .nav-bottom li a i {
+header .navs .nav-bottom li a i {
   font-size: 12px;
   margin-left: 5px;
 }
@@ -820,6 +820,8 @@ header .nav-bottom li a i {
 .learn .picture img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .learn .row {
@@ -1835,6 +1837,7 @@ footer .bottom .nav li:last-child {
 
 .general .picture {
   width: 80%;
+  margin: auto;
 }
 
 .generalBody {
@@ -1855,7 +1858,8 @@ footer .bottom .nav li:last-child {
 
 .generalBody .body h5 {
   font-size: 22px;
-  margin: 20px 0 10px;
+  color: #007a3e;
+  margin: 25px 0 10px;
 }
 
 .generalBody .body h6 {

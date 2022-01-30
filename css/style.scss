@@ -443,7 +443,7 @@ header {
                     opacity: 0;
                     visibility: hidden;
                     transform: translateY(40px);
-                    transition: 0.8s;
+                    transition: 0.4s;
                     position: absolute;
                     width: 245px;
                     top: 30px;
@@ -479,7 +479,7 @@ header {
                 }
             }
                 
-            }
+            
         }
         .nav-top{
             ul{
@@ -536,7 +536,9 @@ header {
         
             }
         }
-    }          
+    } 
+}
+
 
 .banner {
     background-position: center;
@@ -801,6 +803,7 @@ header {
         img{
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
         
     }
@@ -1819,6 +1822,7 @@ footer{
 .general{
     .picture{
         width: 80%;
+        margin: auto;
     }
     
 }
@@ -1836,7 +1840,8 @@ footer{
         }
         h5{
             font-size: 22px;
-            margin: 20px 0 10px;
+            color: #007a3e;
+            margin: 25px 0 10px;
         }
         h6{
             font-size: 22px;

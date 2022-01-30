@@ -222,7 +222,7 @@
     }
 
     .part{
-        margin: 50px auto;
+        margin: 50px auto !important;
     }
 
     .italic-cor{
@@ -314,6 +314,10 @@
 }
 
 @media screen and (max-width: 480px) { 
+
+    .container, .container-small {
+        max-width: auto; 
+    }
     
     .general-btm.white:after{
         left: 50%;
@@ -322,6 +326,25 @@
     .wrap.generalHead {
         padding: 0 15px;
         margin-bottom: 25px;
+    }
+
+    .bullet li ::before{
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: #007a3e;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        border-radius: 50%;
+    }
+
+    .generalBody {
+        padding: 100px 24px 50px;
+    }
+
+    .generalBody .body {
+        margin-bottom: 70px;
     }
 
     .banner{
@@ -376,6 +399,10 @@
         padding: 4px 8px;
         font-size: 12px;
     }
+
+    .slider .slide .owl-dots button {
+        margin-right: 0;
+    }    
 
     .foundation{
         height: 468px;
@@ -455,9 +482,3 @@
     }
 }
 
-@media screen and (max-width: 280px){
-    
-    .foundation{
-        height: 660px;
-    }
-}

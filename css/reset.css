@@ -92,6 +92,8 @@ p{
 
 .italic{
     font-style: italic;
+    font-family: 'Neufile Grotesk Light Extended';
+    margin-bottom: 4px;
 }
 
 .right{
