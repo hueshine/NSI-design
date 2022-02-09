@@ -66,7 +66,7 @@ gsap.from('.video', {
 gsap.from('.mission p', {
     scrollTrigger: {
         trigger: '.mission',
-        start: 'top center+=20%',
+        start: 'top center+=60%',
         end: "bottom bottom",
         toggleActions: "restart none none reset",
     },
@@ -78,7 +78,7 @@ gsap.from('.mission p', {
 gsap.from('.para', {
     scrollTrigger: {
         trigger: '.para',
-        start: 'top center ',
+        start: 'top center+=40% ',
         end: "bottom bottom",
         
     },
@@ -87,23 +87,11 @@ gsap.from('.para', {
     y: -5
 })
 
-gsap.from('.bg', {
-    scrollTrigger: {
-        trigger: '.bg',
-        start: 'top center+=40%',
-        end: "bottom bottom",
-        duration: 1
-        
-    },
-
-    opacity: 0,
-    x: -200
-})
 
 gsap.from('.foundation', {
     scrollTrigger: {
         trigger: '.foundation',
-        start: 'top center ',
+        start: 'top center+=60% ',
         end: "bottom bottom",
         
        
@@ -116,7 +104,7 @@ gsap.from('.foundation', {
 gsap.from('.at_glance', {
     scrollTrigger: {
         trigger: '.at_glance',
-        start: 'top center ',
+        start: 'top center+=60% ',
         end: "bottom bottom",
         
        
@@ -126,18 +114,6 @@ gsap.from('.at_glance', {
     y: 20
 })
 
-gsap.from('.small', {
-    scrollTrigger: {
-        trigger: '.small',
-        start: 'top center ',
-        end: "bottom bottom",
-        
-       
-    },
-
-    opacity: 0,
-    y: 20
-})
 
 
 gsap.from('.intro', {

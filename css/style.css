@@ -106,7 +106,9 @@
 
 .general-button a {
   font-weight: 300;
-  letter-spacing: 3px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 5px;
   text-transform: uppercase;
   border: 1px solid #007a3e;
   display: inline-block;
@@ -138,7 +140,6 @@
   color: #FFFFFF;
   padding: 10px 0px;
   position: absolute;
-  margin-top: -20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -465,7 +466,7 @@ header .navs ul li .dropdown-menu {
 }
 
 header .navs ul li .dropdown-menu#scroll2 {
-  height: 67vh;
+  height: 345px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -608,7 +609,7 @@ header .navs .nav-bottom li a i {
 }
 
 .banner .banner-text .video video {
-  width: 70%;
+  width: 65%;
   height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
@@ -786,9 +787,9 @@ header .navs .nav-bottom li a i {
 }
 
 .foundation .inner .generalHead {
-  width: 56%;
+  width: 60%;
   height: 100%;
-  padding: 8% 72px 10%;
+  padding: 8% 8% 10%;
   color: #fff;
   position: relative;
 }
@@ -1069,7 +1070,7 @@ footer .bottom .nav li:last-child {
 }
 
 .overview .principles .inner {
-  margin: 90px 50px 50px 50px;
+  margin: 90px 50px 50px;
   padding-right: calc(var(--bs-gutter-x) * 0.8);
   padding-left: calc(var(--bs-gutter-x) * 0.8);
   text-align: center;
@@ -1892,6 +1893,42 @@ footer .bottom .nav li:last-child {
 
 .current .body h6 {
   margin-bottom: 10px;
+}
+
+.conference h2 {
+  margin-bottom: 24px;
+}
+
+.conference p {
+  margin-bottom: 16px;
+}
+
+.conference p:nth-child(2) {
+  margin-bottom: 0px;
+}
+
+.glimpse {
+  padding: 80px 50px;
+}
+
+.glimpse h2 {
+  color: #0b1c32;
+}
+
+.glimpse .glimpse-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.glimpse .glimpse-links .link .general-button a {
+  padding: 22px 27px 20px 25px;
 }
 
 #scroll2::-webkit-scrollbar {

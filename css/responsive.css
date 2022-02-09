@@ -1,13 +1,54 @@
 @media screen and (min-width: 1900px) {
 
-	.container, .container-small {
+    .container {
+		min-width: 1850px;
+        margin: auto;
+    }
+
+    .container-small, .container-60{
+        max-width: 1900px;
+        margin: auto;
+    }
+
+    .container-50{
+        max-width: 1900px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1900px) {
+
+	.container {
 		max-width: 1650px;
+        margin: auto;
+    }
+
+    .container-small, .container-60{
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .container-50{
+        max-width: 1200px;
+        margin: auto;
     }
 
     .part{
         margin: 180px auto;
     }
 
+    .foundation .inner .generalHead{
+        padding: 15% 8%;
+    }
+
+    .overview .principles .inner{
+        padding: 0;
+    }
+
+    .points .content .text {
+        padding-left: 130px;
+    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -15,6 +56,19 @@
     .container, .container-small {
         max-width: 1300px;
         margin: auto;
+    }
+
+    .container-60 {
+        max-width: 910px;
+        margin: 0 auto;
+        width: 100%;
+    } 
+    
+    .container-50 {
+        max-width: 570px;
+        margin: auto;
+        width: 100%;
+    
     }
 }
 
@@ -35,11 +89,11 @@
 @media screen and (max-width: 1024px) {
     
     .container {
-        max-width: 990px; 
+        max-width: 970px; 
     }
 
     .container-small{
-        max-width: 990px;
+        max-width: 900px;
         margin: auto;
     }    
     
@@ -157,6 +211,15 @@
         padding: 0 8%;
     }
 
+    .foundation .overlay{
+        width: 70%;
+    }
+
+    .foundation .inner .generalHead{
+        padding: 8% 6%;
+        width: 68%;
+    }
+
     .learn .col-md-4 {
         width: 33.33%;
     }
@@ -173,16 +236,26 @@
         font-size: 14px;
     }
 
-    .intro p, .award p, .profile p{
+    .intro p, .award p{
         font-size: 16px;
     } 
 
-    .profile .upper img {
-        width: 100%;
+    .overview .principles .inner{
+        padding: 30px;
+        margin: 50px 0;
     }
 
-    .profile .lower p{
-        width: calc(100% * 8/12);
+    .points .content .text {
+        margin-top: 50px; 
+        padding-left: 0px;
+    }
+
+    .points .content .div {
+        margin-top: 0px;
+    }
+
+    .members .column .card-overlay .text-overlay{
+        top: 70%;
     }
 
     .award .text {
@@ -193,6 +266,14 @@
         margin-top: 30px;
     }
 
+    .prof-int .text{
+        margin-top: -34px;
+    }
+    
+    .vacancy .form form {
+        padding: 0 20px;
+    }
+    
     .form-group .mid{
         flex-direction: column;
     }
@@ -205,14 +286,7 @@
         margin-top: 40px;
     }
 
-    .gallery .top .col-md-6:last-child {
-        margin-left: 7px;
-    }
-
-    .gallery .bottom .col-md-4:nth-last-child(even) {
-        margin: 0 7px;
-    }   
-
+    
 }
 
 @media screen and (max-width: 768px) { 
@@ -227,6 +301,11 @@
 
     .italic-cor{
         font-size: 24px;
+    }
+
+    .breadcrumb{
+        left: 20%;
+        transform: translate(0%);
     }
 
     header .navs .nav-top ul li a {

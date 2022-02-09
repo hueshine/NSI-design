@@ -108,7 +108,9 @@
 .general-button{
    a{
     font-weight: 300;
-    letter-spacing: 3px;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 5px;
     text-transform: uppercase;
     border: 1px solid #007a3e ;
     display: inline-block;
@@ -138,10 +140,10 @@
     color: #FFFFFF;
     padding: 10px 0px;
     position: absolute;
-    margin-top: -20px;
     justify-content: center;
     left: 50%;
     transform: translate(-50%);
+    
 
     li{
         display: inline;
@@ -449,8 +451,8 @@ header {
                     top: 30px;
 
                     &#scroll2{
-                        // height: 245px;
-                        height: 67vh;
+                        height: 345px;
+                        // height: 67vh;
                         overflow-y: scroll;
                         overflow-x: hidden;
                    
@@ -601,7 +603,7 @@ header {
             display: flex;
             
             video{
-                width: 70%;
+                width: 65%;
                 height: 70vh;
                 object-fit: cover;
                 margin-top: 48px;
@@ -766,9 +768,9 @@ header {
         position: absolute;
         
         .generalHead {
-            width: 56%;
+            width: 60%;
             height: 100%;
-            padding: 8% 72px 10%;
+            padding: 8% 8% 10%;
             color: #fff;
             position: relative;
             h2{
@@ -1049,7 +1051,7 @@ footer{
         padding: 80px;
         
         .inner{
-            margin: 90px 50px 50px 50px;
+            margin: 90px 50px 50px;
             padding-right: calc(var(--bs-gutter-x) * 0.8);
             padding-left: calc(var(--bs-gutter-x) * 0.8);
             text-align: center;
@@ -1879,6 +1881,40 @@ footer{
         padding: 40px;
         h6{
             margin-bottom: 10px;
+        }
+    }
+}
+
+.conference{
+    h2{
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 16px;
+            &:nth-child(2){
+                margin-bottom: 0px;
+            }
+    }
+
+}
+
+.glimpse{
+    padding: 80px 50px;
+    h2{
+        color: #0b1c32;
+    }
+    .glimpse-links{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        .link{
+            
+            .general-button{
+                a{
+                    padding: 22px 27px 20px 25px;
+                }
+            }
         }
     }
 }
