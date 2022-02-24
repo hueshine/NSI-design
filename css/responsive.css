@@ -1,21 +1,3 @@
-@media screen and (min-width: 1900px) {
-
-    .container {
-		min-width: 1850px;
-        margin: auto;
-    }
-
-    .container-small, .container-60{
-        max-width: 1900px;
-        margin: auto;
-    }
-
-    .container-50{
-        max-width: 1900px;
-        margin: auto;
-    }
-
-}
 
 @media screen and (max-width: 1900px) {
 

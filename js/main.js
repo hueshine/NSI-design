@@ -39,25 +39,7 @@ function customPager () {
 }
 
 
-$('.slide').owlCarousel({
-    autoPlay: 4000,
-    navigation: true,
-    loop: true,
-    dots: true,
-    dotsData: true,
-    autoplayTimeout: 6000,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 1
-        }
-    }
-})
+
 
 $('.timeline').owlCarousel({
     loop: false,
@@ -96,3 +78,23 @@ $('.timeline').owlCarousel({
 
 
 }
+$(document).ready(function () {
+
+    if (screen.width < 769) {
+        $(".events-list").hide();
+    }
+  
+});
+
+
+$( '.whole-wrapper .events-list .event' ).on('click', function () {
+    $( '.events-list .event' ).removeClass( 'active' );
+    $( this ).addClass( 'active' );
+    
+});
+
+$( '.whole-wrapper .events-list .event' ).on('click', function () {
+    $( '.whole-wrapper .wrapper' ).removeClass( 'active' );
+    $( this ).addClass( 'active' );
+    
+});

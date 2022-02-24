@@ -92,9 +92,7 @@ gsap.from('.foundation', {
     scrollTrigger: {
         trigger: '.foundation',
         start: 'top center+=60% ',
-        end: "bottom bottom",
-        
-       
+        end: "bottom bottom",       
     },
 
     opacity: 0,
@@ -135,3 +133,11 @@ gsap.from('.lists .learn-card', {
   stagger: 0.5,
   y: 250
 })
+
+ScrollTrigger.create({ 
+  trigger: '.gallery .whole-wrapper', 
+  start: 'top top+=20%', 
+  pin: '.gallery .whole-wrapper .events-list',  
+  end: 'bottom bottom', 
+})
+
