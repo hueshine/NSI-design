@@ -688,41 +688,7 @@ header {
     }   
 }
 
-.slider{
-    .slide{
-        overflow: hidden;
-        .item{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            padding: 0 20%;
-    
-            .text{
-                padding-right: 60px;
-                width: 40%;
-                margin: auto;
-                h2{
-                    color: #007a3e;
-                    text-transform: uppercase;
-                }
-            }
-    
-            .picture{
-                width: 60%;
-                height: 400px;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-            h3{
-                display: none;
-            }
-        }
-    }
-}
+
 
 .foundation{
     background-position: center;
