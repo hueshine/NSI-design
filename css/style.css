@@ -208,6 +208,22 @@
   margin: 8px 0 !important;
 }
 
+.bullet li p a {
+  color: inherit;
+  margin-top: 6px;
+  position: relative;
+}
+
+.bullet li p a:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0e231a;
+}
+
 .bullet li.space {
   margin-top: 20px;
 }
@@ -347,12 +363,16 @@ header {
   width: 100%;
   z-index: 8;
   position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 header.fixed-header {
   position: fixed;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 header img {
@@ -1010,37 +1030,60 @@ footer .bottom .nav li:last-child {
   padding: 20px;
 }
 
-.points .content {
-  margin: 0 90px;
-}
-
-.points .content .div {
+.points .content ul li {
   margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.points .content h2 {
+.points .content ul li:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.points .content ul li:nth-child(even) .text {
+  margin: auto 0% auto 10%;
+}
+
+.points .content ul li .text {
+  width: 48%;
+  margin: auto 10% auto 0;
+}
+
+.points .content ul li .text h2 {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
 
-.points .content p {
+.points .content ul li .text p {
   font-size: 20px;
+  width: 430px;
+  max-width: 100%;
 }
 
-.points .content .picture {
+.points .content ul li .text li {
+  display: block;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 0;
+}
+
+.points .content ul li .picture {
+  width: 48%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.points .content .picture img {
+.points .content ul li .picture img {
   width: 100%;
-}
-
-.points .content .text {
-  margin-top: 150px;
-  padding-left: 50px;
-  width: 80%;
 }
 
 .points.index .picture {
@@ -1983,6 +2026,228 @@ footer .bottom .nav li:last-child {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.stories-types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
+
+.stories-types .story {
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.stories-types .story:hover::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#0e231af0));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e231af0 100%);
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: .75s background ease-in-out;
+  transition: .75s background ease-in-out;
+  z-index: 1;
+}
+
+.stories-types .story .text-overlay {
+  top: 80%;
+  right: 0%;
+  height: 25%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .75s all ease-in-out;
+  transition: .75s all ease-in-out;
+  position: absolute;
+  z-index: 2;
+  width: 86%;
+  margin: auto;
+}
+
+.stories-types .story .text-overlay p {
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 1.6px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.stories-types .story:hover .text-overlay {
+  top: 20%;
+  left: 0%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 4.5rem;
+  text-align: center;
+}
+
+.stories-types .story:hover .text-overlay p {
+  overflow: visible;
+  white-space: normal;
+  width: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.audio-collection .podcast {
+  background-color: #80c24229;
+  padding: 32px;
+  position: relative;
+}
+
+.audio-collection .podcast .image {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.audio-collection .podcast .image img {
+  width: 100%;
+}
+
+.audio-collection .podcast .desc {
+  text-align: center;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.audio-collection .podcast .desc p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.audio-collection .podcast .desc h4 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 100;
+  font-family: 'Neufile Grotesk';
+}
+
+.audio-collection .podcast .hover_click {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.audio-collection .podcast .hover_click ion-icon {
+  position: absolute;
+  top: 88%;
+  border: 1px solid #80c242;
+  right: 10%;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #80c242;
+  padding: 8px 6px 8px 8px;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.audio-collection .podcast:hover .hover_click {
+  opacity: 1;
+  visibility: visible;
+}
+
+.audio-collection .podcast:hover .hover_click ion-icon {
+  top: 54%;
+  font-size: 30px;
+  padding: 12px 10px 12px 12px;
+}
+
+.audio-collection .podcast:hover .image, .audio-collection .podcast:hover .desc {
+  opacity: 0.5;
+}
+
+.audio-player {
+  background-color: #0e231a;
+  padding: 32px 0;
+  border-bottom: 0.6px solid #80c24240;
+}
+
+.audio-player .audio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.audio-player .audio .play button {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.audio-player .audio .play button ion-icon {
+  padding: 10px 6px 4px 8px;
+  color: #fff;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.audio-player .audio .play button ion-icon.pause-on-click {
+  display: none;
+}
+
+.audio-player .audio .play button:hover {
+  border-color: #80c242;
+}
+
+.audio-player .audio .play button:hover ion-icon {
+  color: #80c242;
+}
+
+.audio-player .audio .middle-bar {
+  width: 70%;
+}
+
+.audio-player .audio .middle-bar .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.audio-player .audio .middle-bar .info h6 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.audio-player .audio .middle-bar .info p {
+  color: #808080;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 8px 8px;
+}
+
+.audio-player .audio .time {
+  color: #fff;
+  font-size: 12px;
 }
 
 #scroll2::-webkit-scrollbar {

@@ -204,6 +204,20 @@
         }
         p{
             margin: 8px 0 !important;
+            a{
+                color: inherit;
+                margin-top: 6px;
+                position: relative;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 24px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #0e231a;
+                }
+            }
         }
         &.space{
             margin-top: 20px;
@@ -338,11 +352,13 @@ header {
     width: 100%;
     z-index: 8;
     position: relative;
+    transition: all 0.3s;
 
     &.fixed-header{
         position: fixed;
         top: 0;
         left: 0;
+        transition: all 0.3s; 
     }
 
     img{
@@ -1011,31 +1027,45 @@ footer{
 
 .points{
     .content{
-        margin:0 90px;
-
-        .div{
-            margin-top: 65px;
-        }
-
-        h2{
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-        }
-        p{
-            font-size: 20px;
-        }
-        .picture{
-            
-            height: 500px;
-            object-fit: cover;
-            img{
-                width: 100%;
+         
+        ul{
+            li{
+                margin-top: 65px;
+                display: flex;
+                justify-content: space-between;
+                &:nth-child(even){
+                    flex-direction: row-reverse;
+                    .text{
+                        margin: auto 0% auto 10%;
+                    }
+                }
+                .text{
+                    width: 48%;
+                    margin: auto 10% auto 0;
+                    h2{
+                        letter-spacing: 1px;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 20px;
+                        width: 430px;
+                        max-width: 100%;
+                    }
+                    li{
+                        display: block;
+                        justify-content: start;
+                        margin-top: 0;
+                    }
+                }
+                .picture{
+                    width: 48%;
+                    height: 500px;
+                    object-fit: cover;
+                    img{
+                        width: 100%;
+                    }
+                }
             }
-        }
-        .text{
-            margin-top: 150px;
-            padding-left: 50px;
-            width: 80%;
         }
     }
     &.index{
@@ -1956,6 +1986,193 @@ footer{
         }
     }
 }
+
+.stories-types{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    .story{
+        height: 400px;
+        width: 400px;
+        background-size: cover;
+        // background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        &:hover{
+            &::before {
+                background: linear-gradient(180deg,rgba(0,0,0,0) 0%,#0e231af0 100%);
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transition: .75s background ease-in-out;
+                z-index: 1;
+            }
+        }
+        .text-overlay{
+            top: 80%;
+            right: 0%;
+            height: 25%;
+            text-align: center;
+            justify-content: center;
+            transition: .75s all ease-in-out;
+            position: absolute;
+            z-index: 2;
+            width: 86%;
+            margin: auto;
+            p {
+                font-size: 14px;
+                font-weight: 100;
+                letter-spacing: 1.6px;
+                color: #fff;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        &:hover{
+            .text-overlay{
+                top: 20%;
+                left: 0%;
+                height: 100%;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 4.5rem;
+                text-align: center;
+
+                p{
+                    overflow: visible;
+                    white-space: normal;
+                    width: auto;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+.audio-collection{
+    .podcast{
+        background-color: #80c24229;
+        padding: 32px;
+        position: relative;
+        .image{
+            transition: all 0.6s ease;
+            img{
+                width: 100%;
+            }
+        }
+        .desc{
+            text-align: center;
+            transition: all 0.6s ease;
+            p{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            h4{
+                font-size: 16px;
+                line-height: 1.5;
+                font-weight: 100;
+                font-family: 'Neufile Grotesk';
+            }
+        }
+        .hover_click{
+            opacity: 0;
+            visibility: hidden;
+            ion-icon{
+                position: absolute;
+                top: 88%;
+                border: 1px solid #80c242;
+                right: 10%;
+                border-radius: 50%;
+                font-size: 24px;
+                color: #80c242;
+                padding: 8px 6px 8px 8px;
+                transition: all 0.6s ease-in-out;
+            }
+        }
+        &:hover{
+            .hover_click{
+                opacity: 1;
+                visibility: visible;
+                ion-icon{
+                    top: 54%;
+                    font-size: 30px;
+                    padding: 12px 10px 12px 12px;
+                }
+            }
+            .image, .desc{
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+.audio-player{
+    background-color: #0e231a;
+    padding: 32px 0;
+    border-bottom: 0.6px solid #80c24240;
+    .audio{
+        display: flex;
+        justify-content: space-around;
+        .play{
+            button{
+                border: 1px solid #fff;
+                border-radius: 50%;
+                background: transparent;
+                transition: all 0.6s ease;
+                ion-icon{
+                    padding: 10px 6px 4px 8px;
+                    color: #fff;
+                    transition: all 0.6s ease;
+                    &.pause-on-click{
+                        display: none;
+                    }
+                }
+                &:hover{
+                    border-color: #80c242;
+                    ion-icon{
+                        color: #80c242;
+                    }
+                }
+            }
+        }
+        .middle-bar{
+            width: 70%;
+            .info{
+                display: flex;
+                align-items: center;
+                h6{
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0.8px;
+                }
+                p{
+                    color: #808080;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    margin: 0 8px 8px;
+                }
+            }
+        }
+        .time{
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+
 
 #scroll2::-webkit-scrollbar {
     width: 8px;
