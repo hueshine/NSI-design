@@ -175,7 +175,7 @@
     }
 
     .banner .banner-text .text h1{
-        font-size: 50px;
+        font-size: 48px;
     }
     
     .non .banner-text .text{
@@ -183,7 +183,7 @@
     }
 
     .banner .banner-text .video video {
-        width: 60%;
+        width: 56%;
     }
     
     .foundation .overlay{
@@ -294,6 +294,42 @@
         transform: translate(0) !important;
     }
 
+    .banner{
+        height: auto;
+    }
+
+    .banner .banner-text {
+        display: block;
+        padding-bottom: 80px;
+    }
+    .banner .banner-text .video {
+        margin-top: 50px;
+    }
+
+    .banner .banner-text .video video, .text{
+        display: block;
+        width: 90% !important;
+        margin: auto;
+    }
+
+    .banner .banner-text .video video{
+        height: 300px;
+    }
+
+    .banner .banner-text .text{
+        text-align: center;
+        position: relative;
+
+    }
+
+    .general-btm.white:hover{
+        text-decoration: underline;
+    }
+
+    .general-btm.white:after, :before {
+        display: none;
+    }
+
     .generalHead h2{
         font-size: 38px;
     }
@@ -392,37 +428,6 @@
         margin-bottom: 70px;
     }
 
-    .banner{
-        height: auto;
-    }
-
-    .banner .banner-text {
-        display: block;
-        padding-bottom: 80px;
-    }
-    .banner .banner-text .video {
-        margin-top: 50px;
-    }
-
-    .banner .banner-text .video video, .text{
-        display: block;
-        width: 90% !important;
-        margin: auto;
-    }
-
-    .banner .banner-text .video video{
-        height: 300px;
-    }
-
-    .banner .banner-text .text{
-        text-align: center;
-        position: relative;
-
-    }
-
-    .general-btm.white:after, :before {
-        display: none;
-    }
 
     .para{
         width: 100%;

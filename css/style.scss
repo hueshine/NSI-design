@@ -230,6 +230,15 @@
             }
         }
     }
+    &.train{
+        width: 86%;
+        margin: auto;
+        li{
+            p{
+                text-align: left;
+            }
+        }
+    }
 }
 
 .full{
@@ -1097,24 +1106,17 @@ footer{
             position: relative;
     
             &::before {
-                background: linear-gradient(180deg,rgba(0,0,0,0) 70%,#0e231af0 92%);
+                background: linear-gradient(180deg,rgba(0,0,0,0) 48%,#0e231af0 92%);
                 content: '';
                 position: absolute;
                 top: 0;
                 bottom: 0;
                 left: 0;
                 right: 0;
-                transition: .75s background ease-in-out;
                 z-index: 1;
             }
-    
-            &:hover{
-                ::before {
-                    background: #0e231acc;
-                }
-            }
             .text-overlay{
-                top: 80%;
+                top: 74%;
                 right: 0;
                 height: 25%;
                 text-align: center;
@@ -1139,24 +1141,6 @@ footer{
                     text-overflow: ellipsis;
                     white-space: nowrap;
                     margin-bottom: 0;
-                }
-            }
-
-            &:hover{
-                .text-overlay{
-                    top: 20%;
-                    left: 0%;
-                    height: 100%;
-                    align-items: center;
-                    justify-content: flex-start;
-                    padding-top: 4.5rem;
-                    text-align: center;
-
-                    p{
-                        overflow: visible;
-                        white-space: normal;
-                        width: auto;
-                    }
                 }
             }
         }
@@ -2083,7 +2067,7 @@ footer{
         .hover_click{
             opacity: 0;
             visibility: hidden;
-            ion-icon{
+            i{
                 position: absolute;
                 top: 88%;
                 border: 1px solid #80c242;
@@ -2091,7 +2075,6 @@ footer{
                 border-radius: 50%;
                 font-size: 24px;
                 color: #80c242;
-                padding: 8px 6px 8px 8px;
                 transition: all 0.6s ease-in-out;
             }
         }
@@ -2099,10 +2082,10 @@ footer{
             .hover_click{
                 opacity: 1;
                 visibility: visible;
-                ion-icon{
+                i{
                     top: 54%;
                     font-size: 30px;
-                    padding: 12px 10px 12px 12px;
+                    padding: 7.5px 8.5px 0 8.5px;
                 }
             }
             .image, .desc{
@@ -2121,22 +2104,20 @@ footer{
         display: flex;
         justify-content: space-around;
         .play{
-            button{
+            .button{
                 border: 1px solid #fff;
                 border-radius: 50%;
                 background: transparent;
                 transition: all 0.6s ease;
-                ion-icon{
-                    padding: 10px 6px 4px 8px;
+                i{
+                    padding: 12px 12px 12px 14px;
                     color: #fff;
+                    font-size: 14px;
                     transition: all 0.6s ease;
-                    &.pause-on-click{
-                        display: none;
-                    }
                 }
                 &:hover{
                     border-color: #80c242;
-                    ion-icon{
+                    i{
                         color: #80c242;
                     }
                 }
@@ -2162,10 +2143,117 @@ footer{
                     margin: 0 8px 8px;
                 }
             }
+            .progress-bar{
+                position: relative;
+                height: 2px;
+                background: #fff;
+                margin-bottom: 10px;
+                input{
+                    position: absolute;
+                    width: 100%;
+                    top: -6px;
+                    left: 0;
+                    cursor: pointer;
+                    z-index: 99;
+                    transition: 3s linear;
+                    opacity: 0;
+                }
+                .bar2{
+                    position: absolute;
+                    background-color: #80c242;
+                    width: 20%;
+                    height: 100%;
+                    top: 0;
+                }
+                .dot{
+                    position: absolute;
+                    background-color: #80c242;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    left: 0%;
+                    top: -1%;
+                    transition: 1s linear;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 16px;
+                        height: 16px;
+                        left: -6px;
+                        top: -6px;
+                        background: #80c242;
+                        border: 1px solid #80c242;
+                        border-radius: 50%;
+                        box-shadow: inset 0px 0px 3px #80c242;
+                        transition: 1s linear;
+                    }
+                }
+            }
         }
         .time{
+            display: flex;
+            align-items: end;
             color: #fff;
             font-size: 12px;
+            .current-time{
+                padding: 8px;
+            }
+        }
+        .volume{
+            position: relative;
+            width: 100px;
+            height: 2px;
+            bottom: -24px;
+            background: #fff;
+            margin-left: 32px;
+            ion-icon{
+                position: absolute;
+                color: #fff;
+                font-size: 20px;
+                bottom: -11px;
+                margin-right: 8px;
+                left: -32%;
+            }
+            input{
+                position: absolute;
+                width: 100%;
+                top: -10px;
+                left: 24%;
+                cursor: pointer;
+                z-index: 99;
+                transition: 3s linear;
+                opacity: 0;
+            }
+            .vol_bar{
+                position: absolute;
+                background-color: #80c242;
+                width: 20%;
+                height: 100%;
+                top: 0;
+            }
+            .vol_dot{
+                position: absolute;
+                background-color: #80c242;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                left: 24%;
+                top: -1%;
+                transition: 1s linear;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    left: -6px;
+                    top: -6px;
+                    background: #80c242;
+                    border: 1px solid #80c242;
+                    border-radius: 50%;
+                    box-shadow: inset 0px 0px 3px #80c242;
+                    transition: 1s linear;
+                }
+            }
         }
     }
 }
