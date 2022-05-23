@@ -63,6 +63,29 @@ $('.timeline').owlCarousel({
     }
 })
 
+$('.history').owlCarousel({
+    loop: false,
+    autoPlay: true,
+    autoplayTimeout: 100,
+    pagination: true,
+    paginationNumbers: false,
+    nav:true,
+    navText: ["<i class='fas fa-chevron-left  ' id='left'></i>", "<i class='fas fa-chevron-right  ' id='right'></i>" ],
+    center:false,
+    margin: 15,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 4
+        }
+    }
+})
+
 
 // let popUp = document.querySelector(".popup");
 // // let closeBtnModal = document.querySelector(".full .close-btn");

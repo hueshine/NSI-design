@@ -1005,12 +1005,6 @@ footer{
             text-align: center;
         }
     }
-    &.time{
-        color: #FFFFFF;
-        h1{
-            color: #FFFFFF;
-        }
-    }
 }
 
 .overview{
@@ -1429,13 +1423,13 @@ footer{
 
 .timeline{
     position: relative;
-    
+    margin-top: 120px;
         &::after{
             content: "";
             position: absolute;
             width: 100%;
             height: 2px;
-            background-color: #FFFFFF;
+            background-color: #80c242;
             top: 8px;
             left: 0;
             z-index: -1;
@@ -1451,7 +1445,7 @@ footer{
                 background-color: #FFFFFF;
                 padding: 16px;
                 .circle{
-                    border: 4px #fff solid;
+                    border: 4px #0e231a solid;
                     background: #B7852C;
                     border-radius: 50%;
                     height: 18px;
@@ -1480,7 +1474,7 @@ footer{
                 }
         
                 .timeline-text{
-                    .year {
+                    .date {
                         font-size: 20px;
                         line-height: 36px;
                         color: #FFFFFF;
@@ -1490,17 +1484,7 @@ footer{
                         background-color: #007a3e;
                         z-index: 1;
                         position: relative;
-                        margin: -32px -8px 8px;
                         font-weight: 400;
-                    }
-                    .month {
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: #B7852C;
-                        // color: #315e88;
-                        display: block;
-                        margin-bottom: 8px;
-                        font-weight: 900;
                     }
                     p {
                         font-size: 17px;
@@ -2258,6 +2242,108 @@ footer{
     }
 }
 
+
+.chronology{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: 1px;
+        top: 50%;
+        left: 10%;
+        z-index: -1;
+        background-color: #007a3e;
+    }
+    .history{
+        .item{
+            z-index: 1;
+            .wrap{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+
+                }
+                .info{
+                    padding: 16px;
+                    background-color: #b9e494c3;
+                    color: #000;
+                    display: block;
+                }
+                .date{
+                    padding: 4px;
+                    font-size: 20px;
+                    text-align: center;
+                    background-color: #80c242;
+                    color: #fff;
+                }
+                .image{
+                    width: 16px;
+                    margin: auto;
+                    height: 56px;
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .owl-stage-outer{
+            .owl-stage{
+                padding: 120px 0;
+                min-height: 100vh;
+                .owl-item{
+                    &:nth-child(odd){
+                        // transform: translateY(-12%);
+                        .item{
+                            .image{
+                                transform: rotateX(180deg);
+                            }
+                        }
+                    }
+                    &:nth-child(even){
+                        // transform: translateY(-42%);
+                        .item{
+                            .wrap{
+                                flex-direction: column-reverse;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .owl-nav{
+            button{
+                position: absolute;
+                bottom: 680px;
+                color: #fff;
+                background-color: #80c242;
+                border-radius: 50%;
+                font-size: 14px;
+                width: 32px;
+                height: 32px;
+                .fas{
+                    padding-top: 6px;
+                }
+            }
+            .owl-prev{
+                left: 47%;
+            }
+            .owl-next{
+                right: 47%;
+            }
+            .owl-next, .owl-prev{
+                transition: all 0.4s ease;
+                &.disabled{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
 
 
 
